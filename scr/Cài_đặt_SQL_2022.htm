@@ -17,163 +17,157 @@ html,body {
 
 
 
-
+<meta http-equiv="X-UA-Compatible" content="IE=8">
 <style>
-html,div { margin: 0; padding: 0;}
+html {
+	overflow-y:scroll;
+}
 
 body {
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
-	height: 100%;
+	overflow: auto; 
+	background-color: #FFFFFF; 
+}
+
+#winchm_template_top{
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #00CC00;
+
+	width: auto;
+	background-color: #A6CAF0;
+	text-align: left;
+	background-image: url('template/hgrad.gif');
+	background-repeat: repeat;
+	
+}
+
+#winchm_template_navigation{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-right: 5px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #808080; 
+
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #C1C1C1;
+
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #DBDBDB;
+	
+	background-color: #FFFFFF;
+	width: auto;
 }
 
 #winchm_template_button{
 	float: right;
-	width: 93px;
-	top: 7px;
+	top: -3px;
 	position: relative;
 	text-align: right;
-	right: 5px;
+	right: -5px;
 	height: auto;
 }
 
-#winchm_template_top{
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px solid #9B9B9B;
-	background-color: #B1CEFE;
-}
-
-#winchm_template_navigation{
-	margin: 0px;
-	padding-top: 7px;
-	padding-left: 7px;
-	padding-bottom: 3px;
-	padding-right: 0px;
-	font-size: 8.5pt;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #585858;
-}
-
 #winchm_template_title{
-	margin: 0px;
-	padding-top: 4px;
-	padding-left: 7px;
-	padding-bottom: 7px;
-	padding-right: 0px;
-	font-size: 18px; 
-	font-family: Verdana, Geneva, sans-serif;
-	color: #363636;
-}
+	font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: 353535;	
 
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #C7C7C7;
+
+	width: auto;
+	background-color: #FFFFFF;
+	text-align: left;
+}
 #winchm_template_content{
-	margin-top: 20px;
+	padding: 0px;
+	margin-top: 15px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-right: 15px;
+
 	width: auto  !important;
 	width: 100%;
 }
 
 #winchm_template_footer{
 	border-width: 1px;
-	border-color: #B1CEFE;
+	border-color: #c0c0c0;
 	border-top-style: solid;
-	margin-top: 15px;
+	
+	margin-top: 0px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	margin-right: 15px;
-	padding-top: 7px;
+
+	padding-top: 6px;
 	padding-left: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	padding-right: 0px;
+
 	font-family: arial, helvetica, sans-serif;
-	font-size: 8.5pt;
-	color: #696969;
-	width: auto;
-	text-align: left;
+	font-size: 9px;
+	color: #909090;
+
+	text-align: left;	
+	width: auto;	
 }
 
+#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
+#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
 
-#winchm_template_container{
-	margin: 0px;
-	padding: 0px;
-	position: static;
-	padding-bottom: 3px;
-	overflow: auto;
-	background-color: #FFFFFF;
-}
-
+a:link	{text-decoration: underline; color:#0033cc}
+a:visited  {text-decoration: underline; color: #0033cc}
+a:active {text-decoration: underline; color: #0033cc }
+a:hover {text-decoration: underline;color: #ff0000;}
 
 @media print
 {
-#winchm_template_container{
-	position: static;	
-	margin: 0px;
-	padding: 5px;
-	
-	width: auto;
-	height: auto;
-	overflow: auto;
-}
 #winchm_template_button{
 visibility:hidden;
 }
 }
-
-#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
-#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
-#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
-#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
-
-A:link	{text-decoration: underline; color:#0033CC}
-A:visited  {text-decoration: underline; color: #0033CC}
-A:active {text-decoration: underline; color: #0033CC }
-A:hover {text-decoration: underline;color: #FF0000;}
 </style>
-<script type="text/javascript">
-function isMobile(){
-Agent = window.navigator.userAgent;
-if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
-return true;
-}else{
-return false;	
-}
-
-}
-function d_onresize(){
-if (window.navigator.userAgent.indexOf("MSIE")>=1){
-document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
-document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
-}
-document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
-}
-
-function d_onbeforeprint(){
-document.getElementById('winchm_template_container').style.width = 'auto';
-document.getElementById('winchm_template_container').style.height = 'auto';
-}
-
-function d_onafterprint(){
-d_onresize();
-}
-
-if(!isMobile()){
-
-window.onload = d_onresize;
-window.onresize = d_onresize;
-window.onbeforeprint = d_onbeforeprint;
-window.onafterprint = d_onafterprint;
-
-document.write("<style>\n");
-document.write("body {overflow: hidden;}\n");
-document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
-document.write("</style>\n");
-}
-
-</script>
 </head>
 
 <body><script language="JavaScript" type="text/JavaScript">
@@ -201,18 +195,257 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </script> 
 
 
-<div id="winchm_template_top">
-	<div id="winchm_template_button"><A href="$$unsavedpage2.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="Tách_thư_mục_temp_và_log_khi_cài_đặt_SQL_Server.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
-	<div id="winchm_template_navigation">Help &gt; 
+<div id="winchm_template_top"><div id="winchm_template_button"><A href="$$unsavedpage2.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><A href="Tách_thư_mục_temp_và_log_khi_cài_đặt_SQL_Server.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template/btn_next_n.gif" border="0"></a></div>
+<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage2.htm">Cơ sở dữ liệu</A> &gt; </div>
-	<div id="winchm_template_title">($Tài liệu lưu hành nội 
-bộ$)</div>
-</div>
-<div id="winchm_template_container">
-	<div id="winchm_template_content">($vinhbc$)</div>	
-	<div id="winchm_template_footer">Copyright © 2016. All rights 
-reserved. (To change the copyright info, just edit it in template.)</div>
-</div>
+<div id="winchm_template_title">Cài đặt Microsoft SQL Server 2022 Enterprise</div>
+<div id="winchm_template_content">
+<P><FONT size=2><STRONG>Chuẩn 
+bị</STRONG>  </FONT> </P>
+<P><FONT size=2>-&nbsp;Tạo kiến trúc thư mục dùng lưu giữ 
+database file </FONT>         </P>
+<P><FONT size=2><IMG style="HEIGHT: 260px; WIDTH: 325px" alt="" src="image/sql01.png" width=378 height=333 >&nbsp; </FONT>         </P>
+<P><SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-font-width: 105%; mso-bidi-font-size: 11.0pt">- Mount<SPAN 
+style="LETTER-SPACING: -0.55pt"> </SPAN>SQL<SPAN 
+style="LETTER-SPACING: -0.55pt"> </SPAN>iso<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN><SPAN 
+style="LETTER-SPACING: -0.2pt">file:</SPAN></SPAN><SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-bidi-font-size: 11.0pt"><o:p></O:P></SPAN><FONT size=2> </FONT>         </P>
+<P><SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-font-width: 105%; mso-bidi-font-size: 11.0pt">- Thực<SPAN style="LETTER-SPACING: -0.4pt"> 
+</SPAN>hiện<SPAN style="LETTER-SPACING: -0.4pt"> </SPAN>Run<SPAN 
+style="LETTER-SPACING: -0.55pt"> </SPAN>as<SPAN style="LETTER-SPACING: -0.45pt"> 
+</SPAN><SPAN 
+style="LETTER-SPACING: -0.1pt">Administrator</SPAN></SPAN><SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-bidi-font-size: 11.0pt"><o:p></O:P></SPAN>         </P>
+<P><FONT size=2><IMG style="HEIGHT: 273px; WIDTH: 421px" alt="" src="image/sql02.png" width=563 height=365 ></FONT></P>
+<P><FONT size=2>-<SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-font-width: 105%; mso-bidi-font-size: 11.0pt">Chọn<SPAN style="LETTER-SPACING: -0.6pt"> 
+</SPAN>Installation<SPAN style="LETTER-SPACING: -0.6pt"> </SPAN><SPAN 
+style="LETTER-SPACING: -0.55pt"> </SPAN>New<SPAN style="LETTER-SPACING: -0.6pt"> 
+</SPAN>SQL<SPAN style="LETTER-SPACING: -0.5pt"> </SPAN>Server<SPAN 
+style="LETTER-SPACING: -0.6pt"> </SPAN>standalone<SPAN 
+style="LETTER-SPACING: -0.6pt"> </SPAN>installation<SPAN 
+style="LETTER-SPACING: -0.6pt"> </SPAN>or<SPAN style="LETTER-SPACING: -0.5pt"> 
+</SPAN>add<SPAN style="LETTER-SPACING: -0.6pt"> </SPAN>features<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN>to<SPAN style="LETTER-SPACING: -0.65pt"> 
+</SPAN>an<SPAN style="LETTER-SPACING: -0.65pt"> </SPAN>existing <SPAN 
+style="LETTER-SPACING: -0.1pt">installation.</SPAN></SPAN><SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-bidi-font-size: 11.0pt"><o:p></O:P></SPAN></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 366px; WIDTH: 428px" alt="" src="image/sql03.png" width=565 height=426 ></FONT></P>
+<P><FONT size=2>-&nbsp;Product key đã được điền 
+sẵn. </FONT>     </P>
+<P><FONT size=2><IMG style="HEIGHT: 441px; WIDTH: 440px" alt="" src="image/sql04.png" width=564 height=496 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 431px; WIDTH: 442px" alt="" src="image/sql05.png" width=564 height=495 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 453px; WIDTH: 442px" alt="" src="image/sql06.png" width=565 height=495 ></FONT></P>
+<P><FONT size=2>-&nbsp;Không chọn … check for 
+updates… </FONT>     </P>
+<P><FONT size=2><IMG style="HEIGHT: 447px; WIDTH: 445px" alt="" src="image/sql07.png" width=564 height=495 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 433px; WIDTH: 448px" alt="" src="image/sql08.png" width=565 height=495 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 439px; WIDTH: 450px" alt="" src="image/sql09.png" width=565 height=494 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 460px; WIDTH: 452px" alt="" src="image/sql10.png" width=564 height=495 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 454px; WIDTH: 457px" alt="" src="image/sql11.png" width=564 height=495 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 456px; WIDTH: 458px" alt="" src="image/sql12.png" width=565 height=495 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 459px; WIDTH: 459px" alt="" src="image/sql13.png" width=564 height=496 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 443px; WIDTH: 462px" alt="" src="image/sql14.png" width=564 height=496 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 454px; WIDTH: 465px" alt="" src="image/sql15.png" width=563 height=497 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 450px; WIDTH: 469px" alt="" src="image/sql16.png" width=564 height=497 ></FONT></P>
+<P><FONT size=2></FONT>&nbsp;</P>
+<P><FONT size=2><IMG style="HEIGHT: 274px; WIDTH: 471px" alt="" src="image/NoteTech.wcp" width=564 height=311 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 454px; WIDTH: 473px" alt="" src="image/sql18.png" width=564 height=497 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 280px; WIDTH: 480px" alt="" src="image/NoteTech.wcp" width=564 height=312 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 455px; WIDTH: 487px" alt="" src="image/sql20.png" width=565 height=496 ></FONT></P>
+<P><FONT size=2>3.2.3&nbsp;Cài đặt chương trình SQL Studio 
+Management </FONT>      
+</P>
+<P><FONT size=2><IMG style="HEIGHT: 472px; WIDTH: 498px" alt="" src="image/sql21.png" width=564 height=496 ></FONT></P>
+<P><FONT size=2><IMG style="HEIGHT: 471px; WIDTH: 506px" alt="" src="image/sql22.png" width=563 height=497 ></FONT></P>
+<P align=left><FONT size=2>-<SPAN 
+lang=vi 
+style='FONT-SIZE: 10pt; FONT-FAMILY: "Carlito",sans-serif; mso-font-width: 103%; mso-fareast-font-family: Carlito; mso-bidi-font-family: Carlito'><SPAN 
+style="mso-list: Ignore"><SPAN 
+style='FONT: 7pt "Times New Roman"'><FONT face=Arial >&nbsp; 
+</FONT> 
+</SPAN></SPAN></SPAN><SPAN>Khởi<SPAN style="LETTER-SPACING: -0.5pt"> 
+</SPAN>động<SPAN style="LETTER-SPACING: -0.55pt"> </SPAN>lại<SPAN 
+style="LETTER-SPACING: -0.55pt"> </SPAN>máy<SPAN 
+style="LETTER-SPACING: -0.65pt"> </SPAN>chủ<SPAN style="LETTER-SPACING: -0.5pt"> 
+</SPAN>SQL<SPAN style="LETTER-SPACING: -0.45pt"> </SPAN>để<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN>hoàn<SPAN 
+style="LETTER-SPACING: -0.6pt"> </SPAN>tất<SPAN style="LETTER-SPACING: -0.5pt"> 
+</SPAN>việc<SPAN style="LETTER-SPACING: -0.55pt"> </SPAN>cài<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN>đặt<SPAN style="LETTER-SPACING: -0.5pt"> 
+</SPAN>SQL<SPAN style="LETTER-SPACING: -0.45pt"> </SPAN>Server<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN>Management<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN><SPAN 
+style="LETTER-SPACING: -0.1pt">Studio.</SPAN><SPAN style="LETTER-SPACING: -0.1pt"><SPAN lang=vi 
+style='FONT-SIZE: 10pt; FONT-FAMILY: "Carlito",sans-serif; mso-font-width: 103%; mso-fareast-font-family: Carlito; mso-bidi-font-family: Carlito'><SPAN 
+style="mso-list: Ignore">-<SPAN 
+style='FONT: 7pt "Times New Roman"'><FONT face=Arial >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</FONT> 
+</SPAN></SPAN></SPAN></SPAN></SPAN></FONT></P>
+<P align=left><SPAN><SPAN style="LETTER-SPACING: -0.1pt"><SPAN lang=vi 
+style="FONT-SIZE: 10pt; mso-font-width: 105%; mso-bidi-font-size: 11.0pt"><A 
+name=_TOC_250002><SPAN lang=vi 
+style="LETTER-SPACING: -0.15pt; mso-font-width: 102%"><SPAN 
+style="mso-list: Ignore">-<SPAN 
+style='FONT: 7pt "Times New Roman"'><FONT face=Arial size=2>&nbsp; 
+</FONT> 
+</SPAN></SPAN></SPAN><SPAN lang=vi>Kết<SPAN 
+style="LETTER-SPACING: 0.35pt"> </SPAN>nối<SPAN style="LETTER-SPACING: 0.4pt"> 
+</SPAN>máy<SPAN style="LETTER-SPACING: 0.55pt"> </SPAN>chủ<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>CSDL<SPAN style="LETTER-SPACING: 0.35pt"> 
+</SPAN>SQL<SPAN style="LETTER-SPACING: 0.45pt"> </SPAN>Server<SPAN 
+style="LETTER-SPACING: 0.5pt"> </SPAN>bằng<SPAN style="LETTER-SPACING: 0.4pt"> 
+</SPAN>công<SPAN style="LETTER-SPACING: 0.55pt"> </SPAN>cụ<SPAN 
+style="LETTER-SPACING: 0.6pt"> </SPAN></SPAN></A><SPAN lang=vi 
+style="LETTER-SPACING: -0.2pt">SSMS</SPAN></P><SPAN lang=vi 
+style="LETTER-SPACING: -0.2pt"></SPAN>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><IMG alt="" src="image/sql24.png"></O:P></FONT></SPAN></P>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p></O:P><FONT size=2></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2>Maintaince 
+Plans</O:P></FONT></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2>Ma trận SQL 
+job</O:P></FONT></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 259px; WIDTH: 688px" alt="" src="image/sql26.png" width=931 height=338 ></O:P></FONT></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2>FULL_DAILY_BACKUP_TENANT_DB</FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></O:P></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 207px; WIDTH: 464px" alt="" src="image/sql27.png" width=563 height=250 ></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></O:P></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 268px; WIDTH: 470px" alt="" src="image/NoteTech.wcp" width=563 height=313 ></O:P></FONT></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 276px; WIDTH: 472px" alt="" src="image/NoteTech.wcp" width=563 height=312 ></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></O:P></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 427px; WIDTH: 472px" alt="" src="image/sql30.png" width=565 height=465 ></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></O:P></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 473px; WIDTH: 473px" alt="" src="image/sql31.png" width=564 height=518 ></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></O:P></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2>&nbsp;FULL_MONTH_BACKUP_SYSTEMDB</FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></O:P></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p><FONT size=2><IMG style="HEIGHT: 223px; WIDTH: 480px" alt="" src="image/sql32.png" width=563 height=255 ></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></FONT></SPAN>&nbsp;</H2><SPAN 
+lang=vi></O:P></SPAN>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><FONT size=2><IMG style="HEIGHT: 425px; WIDTH: 482px" alt="" src="image/sql34.png" width=564 height=465 ></FONT></H2>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2><IMG style="HEIGHT: 475px; WIDTH: 484px" alt="" src="image/sql33.png" width=564 height=504 ></FONT></SPAN></H2>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><FONT size=2></FONT></SPAN>&nbsp;</H2><o:p></O:P>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><FONT size=2><IMG style="HEIGHT: 431px; WIDTH: 489px" alt="" src="image/sql35.png" width=564 height=465 ></FONT></H2>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG style="HEIGHT: 287px; WIDTH: 497px" alt="" src="image/NoteTech.wcp" width=564 height=312 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG style="HEIGHT: 483px; WIDTH: 503px" alt="" src="image/sql36.png" width=565 height=517 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">Rebuild_Index</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG style="HEIGHT: 295px; WIDTH: 511px" alt="" src="image/NoteTech.wcp" width=563 height=312 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG style="HEIGHT: 482px; WIDTH: 508px" alt="" src="image/sql38.png" width=553 height=516 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG alt="" src="image/sql39.png"></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG alt="" src="image/sql40.png"></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG alt="" src="image/sql41.png"></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG style="HEIGHT: 492px; WIDTH: 520px" alt="" src="image/sql42.png" width=564 height=517 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">Cleanup backup file</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">Công cụ Task 
+Scheduler<BR><IMG style="HEIGHT: 60px; WIDTH: 482px" alt="" src="image/sql43.png" width=564 height=77 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG style="HEIGHT: 212px; WIDTH: 532px" alt="" src="image/sql44.png" width=564 height=241 ></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG alt="" src="image/sql45.png"></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG alt="" src="image/sql47.png"></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><IMG alt="" src="image/sql46.png"></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><STRONG>-Hết-</STRONG></P>
+<P 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt">&nbsp;</P>
+<H2 
+style="MARGIN: 0in 0in 0in 56.35pt; TEXT-INDENT: -33.95pt; mso-list: l0 level3 lfo1; tab-stops: 56.35pt"><SPAN 
+lang=vi><o:p></O:P><FONT size=2></FONT></SPAN></H2></SPAN></SPAN></FONT></SPAN></div>
+<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
 
 </body>
 </html>

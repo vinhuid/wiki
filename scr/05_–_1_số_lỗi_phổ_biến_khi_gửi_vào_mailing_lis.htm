@@ -17,163 +17,157 @@ html,body {
 
 
 
-
+<meta http-equiv="X-UA-Compatible" content="IE=8">
 <style>
-html,div { margin: 0; padding: 0;}
+html {
+	overflow-y:scroll;
+}
 
 body {
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
-	height: 100%;
+	overflow: auto; 
+	background-color: #FFFFFF; 
+}
+
+#winchm_template_top{
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #00CC00;
+
+	width: auto;
+	background-color: #A6CAF0;
+	text-align: left;
+	background-image: url('template/hgrad.gif');
+	background-repeat: repeat;
+	
+}
+
+#winchm_template_navigation{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-right: 5px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #808080; 
+
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #C1C1C1;
+
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #DBDBDB;
+	
+	background-color: #FFFFFF;
+	width: auto;
 }
 
 #winchm_template_button{
 	float: right;
-	width: 93px;
-	top: 7px;
+	top: -3px;
 	position: relative;
 	text-align: right;
-	right: 5px;
+	right: -5px;
 	height: auto;
 }
 
-#winchm_template_top{
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px solid #9B9B9B;
-	background-color: #B1CEFE;
-}
-
-#winchm_template_navigation{
-	margin: 0px;
-	padding-top: 7px;
-	padding-left: 7px;
-	padding-bottom: 3px;
-	padding-right: 0px;
-	font-size: 8.5pt;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #585858;
-}
-
 #winchm_template_title{
-	margin: 0px;
-	padding-top: 4px;
-	padding-left: 7px;
-	padding-bottom: 7px;
-	padding-right: 0px;
-	font-size: 18px; 
-	font-family: Verdana, Geneva, sans-serif;
-	color: #363636;
-}
+	font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: 353535;	
 
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #C7C7C7;
+
+	width: auto;
+	background-color: #FFFFFF;
+	text-align: left;
+}
 #winchm_template_content{
-	margin-top: 20px;
+	padding: 0px;
+	margin-top: 15px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-right: 15px;
+
 	width: auto  !important;
 	width: 100%;
 }
 
 #winchm_template_footer{
 	border-width: 1px;
-	border-color: #B1CEFE;
+	border-color: #c0c0c0;
 	border-top-style: solid;
-	margin-top: 15px;
+	
+	margin-top: 0px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	margin-right: 15px;
-	padding-top: 7px;
+
+	padding-top: 6px;
 	padding-left: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	padding-right: 0px;
+
 	font-family: arial, helvetica, sans-serif;
-	font-size: 8.5pt;
-	color: #696969;
-	width: auto;
-	text-align: left;
+	font-size: 9px;
+	color: #909090;
+
+	text-align: left;	
+	width: auto;	
 }
 
+#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
+#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
 
-#winchm_template_container{
-	margin: 0px;
-	padding: 0px;
-	position: static;
-	padding-bottom: 3px;
-	overflow: auto;
-	background-color: #FFFFFF;
-}
-
+a:link	{text-decoration: underline; color:#0033cc}
+a:visited  {text-decoration: underline; color: #0033cc}
+a:active {text-decoration: underline; color: #0033cc }
+a:hover {text-decoration: underline;color: #ff0000;}
 
 @media print
 {
-#winchm_template_container{
-	position: static;	
-	margin: 0px;
-	padding: 5px;
-	
-	width: auto;
-	height: auto;
-	overflow: auto;
-}
 #winchm_template_button{
 visibility:hidden;
 }
 }
-
-#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
-#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
-#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
-#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
-
-A:link	{text-decoration: underline; color:#0033CC}
-A:visited  {text-decoration: underline; color: #0033CC}
-A:active {text-decoration: underline; color: #0033CC }
-A:hover {text-decoration: underline;color: #FF0000;}
 </style>
-<script type="text/javascript">
-function isMobile(){
-Agent = window.navigator.userAgent;
-if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
-return true;
-}else{
-return false;	
-}
-
-}
-function d_onresize(){
-if (window.navigator.userAgent.indexOf("MSIE")>=1){
-document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
-document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
-}
-document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
-}
-
-function d_onbeforeprint(){
-document.getElementById('winchm_template_container').style.width = 'auto';
-document.getElementById('winchm_template_container').style.height = 'auto';
-}
-
-function d_onafterprint(){
-d_onresize();
-}
-
-if(!isMobile()){
-
-window.onload = d_onresize;
-window.onresize = d_onresize;
-window.onbeforeprint = d_onbeforeprint;
-window.onafterprint = d_onafterprint;
-
-document.write("<style>\n");
-document.write("body {overflow: hidden;}\n");
-document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
-document.write("</style>\n");
-}
-
-</script>
 </head>
 
 <body><script language="JavaScript" type="text/JavaScript">
@@ -201,18 +195,265 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </script> 
 
 
-<div id="winchm_template_top">
-	<div id="winchm_template_button"><A href="04_–_Cấp_quyền_cho_1_địa_chỉ_không_thuộc_member_được_phép_gửi_vào_mailing_lis.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="$$unsavedpage4.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
-	<div id="winchm_template_navigation">Help &gt; 
+<div id="winchm_template_top"><div id="winchm_template_button"><A href="04_–_Cấp_quyền_cho_1_địa_chỉ_không_thuộc_member_được_phép_gửi_vào_mailing_lis.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><A href="$$unsavedpage4.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template/btn_next_n.gif" border="0"></a></div>
+<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage3.htm">Email</A> &gt; <A href="Mailing_Lists.htm">Mailing Lists</A> &gt; </div>
-	<div id="winchm_template_title">($Tài liệu lưu hành nội 
-bộ$)</div>
-</div>
-<div id="winchm_template_container">
-	<div id="winchm_template_content">($vinhbc$)</div>	
-	<div id="winchm_template_footer">Copyright © 2016. All rights 
-reserved. (To change the copyright info, just edit it in template.)</div>
-</div>
+<div id="winchm_template_title">05 – 1 số lỗi phổ biến khi gửi vào mailing lis</div>
+<div id="winchm_template_content">
+<H3 
+style="BOX-SIZING: border-box !important; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">05.a 
+– Mail nhận có thêm file đính kèm trên Outlook:</SPAN><SPAN 
+class=ez-toc-section-end 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"></SPAN></H3>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Khi 
+user dùng Outlook gửi mail vào mailling list, member nhận mail bằng outlook có 1 
+file đính kèm :<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN>&nbsp;</SPAN>untitled 
+attachment.txt</STRONG>, còn trên webmail không bị.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Cách 
+khắc phục:</STRONG></SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">– 
+Vào mailling list =&gt; xóa toàn bộ nội dung trong 
+phần<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">footer</STRONG><SPAN>&nbsp;</SPAN>của 
+2 mục :<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Digest 
+options</STRONG><SPAN>&nbsp;</SPAN>và<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Non-digest 
+options.</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_008b.png"></P>
+<H3 
+style="BOX-SIZING: border-box !important; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">05.b 
+– Message body is too big</STRONG></SPAN><SPAN class=ez-toc-section-end 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"></SPAN></H3>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Khi 
+thư được gửi đến mailing lists bị lỗi: “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Message 
+body is too big: 204309 bytes with a limit of 40 KB</STRONG>”</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Lý 
+do là dung lượng mail gửi đi có kích thước lớn hơn giới hạn 40 KB mặc định của 
+mailling list.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Cách 
+khắc phục:</STRONG></SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Vào 
+mục<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">General 
+Options&nbsp;</STRONG>, tìm đến dòng “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Maximum 
+length in kilobytes (KB) of a message body. Use 0 for no limit</STRONG>.” nhập 
+số<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">0</STRONG><SPAN>&nbsp;</SPAN>để 
+set không giới hạn.&nbsp;Sau đó kéo xuống dưới cùng 
+nhấn<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Submit 
+your changes</STRONG><SPAN>&nbsp;</SPAN>để lưu lại cấu hình là xong.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><STRONG><IMG alt="" src="image/mailing-list_09.png"></STRONG></P>
+<H3 
+style="BOX-SIZING: border-box !important; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">05.c 
+– Tên địa chỉ mailing list có thêm chuỗi ký tự bounces</STRONG></SPAN><SPAN 
+class=ez-toc-section-end 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"></SPAN></H3>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Khi 
+nhận được mail từ mailing lists trên Outlook , tên hiển thị mailing lists ở 
+dạng: tenmailist-<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">bounces</STRONG>@…. 
+, điều này sẽ làm việc phân loại mail bằng rule trên Outlook không hoạt 
+động.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_11.png"></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Cách 
+khắc phục:</STRONG></SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">B1: 
+Ta vào phần “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">General 
+Options</STRONG>”</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">B2: 
+Kéo chuột xuống dưới cùng của trang hiển thị Tick chọn “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">NO</STRONG>” 
+3 dòng dưới đây. Bấm “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Submit 
+your changes</STRONG>” để lưu cấu hình. Và gửi lại mail.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_12.png"></P>
+<H3 
+style="BOX-SIZING: border-box !important; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">05.d 
+– Message has implicit destination</STRONG></SPAN><SPAN class=ez-toc-section-end 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"></SPAN></H3>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Lỗi 
+khi gửi mail đến mailing list là thành viên của mailing list khác.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Ví 
+dụ :&nbsp; dưới đây ta khởi tạo 2 địa chỉ mailing list&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">a@pavietnam.vn</STRONG>&nbsp;và&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">b@pavietnam.vn</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Member 
+của mailing list&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">a</SPAN>@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>là:<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">userA</SPAN>@pavietnam.vn</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Member 
+của mailing list<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN>&nbsp;</SPAN>b@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>là:<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">userB@pavietnam.vn</STRONG>&nbsp;và 
+ta cũng add địa chỉ mailing list&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">a</SPAN>@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>làm 
+member</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Khi 
+ta gửi mail đến mailing list&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">b@pavietnam.vn<SPAN>&nbsp;</SPAN></STRONG>thì 
+địa chỉ mail<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">userB@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>nhận 
+được mail tuy nhiên địa chỉ<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">userA</SPAN>@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>là 
+member của mailing list<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">a</SPAN>@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>lại 
+không nhận được mail. Vào hàng đợi của địa chỉ mailing 
+list<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">a</SPAN>@pavietnam.vn</STRONG><SPAN>&nbsp;</SPAN>thì 
+thấy mail báo lỗi :&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Message 
+has implicit destination</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Cách 
+khắc phục:</STRONG></SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">B1: 
+Ta vào&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Manage</STRONG>&nbsp;của 
+mailing list<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN>&nbsp;</SPAN><SPAN 
+style="BOX-SIZING: border-box !important; COLOR: rgb(255,0,0); OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">a</SPAN>@pavietnam.vn</STRONG>, 
+sau đó vào&nbsp;phần “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Privacy 
+options…</STRONG>” chọn dòng “<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Recipient 
+filters</STRONG>”</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_13a.png"></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">B2: 
+Tick chọn “</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">NO</STRONG><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">” 
+tại dòng “</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Must 
+posts have list named in destination (to, cc) field (or be among the acceptable 
+alias names, specified below)?</STRONG><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">”.</SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_13b.png"></SPAN></P><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">
+<H3 
+style="BOX-SIZING: border-box !important; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">05.e 
+– Too many recipients to the message</SPAN><SPAN class=ez-toc-section-end 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"></SPAN></H3>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Ngoài 
+ra, chúng ta có thể gặp trường hợp thư gửi vào địa chỉ mailing list có kèm TO , 
+CC cho nhiều địa chỉ (nhiều hơn 10 địa chỉ) sẽ nhận được báo lỗi:&nbsp;<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Too 
+many recipients to the message</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Cách 
+khắc phục:</STRONG></SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">chúng 
+ta set giá trị<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">0</STRONG><SPAN>&nbsp;</SPAN>cho 
+mục :<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Ceiling 
+on acceptable number of recipients for a 
+posting<SPAN>&nbsp;</SPAN></STRONG>trong mục<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Recipient 
+filters</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">&nbsp;</P>
+<H3 
+style="BOX-SIZING: border-box !important; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+id=05f_%E2%80%93_Dung_luong_luu_tru_archive_cua_mailing_list_chiem_dung_luong_lon_tren_server 
+class=ez-toc-section 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert" 
+ez-toc-data-id="#05f_–_Dung_luong_luu_tru_archive_cua_mailing_list_chiem_dung_luong_lon_tren_server"></SPAN><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">05.f 
+– Dung lượng lưu trữ (archive) của mailing list chiếm dung lượng lớn trên 
+server:</SPAN><SPAN class=ez-toc-section-end 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"></SPAN></H3>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Khi 
+mailing list được tạo ra, sẽ được cấu hình chức năng tự động lưu trữ các mail 
+gửi vào , sau 1 thời gian dung lượng sẽ tăng lên chiếm dụng dung lượng sử dụng 
+của toàn gói mail, chúng ta nên tắt tính năng này ngay từ đầu khi tạo mailing 
+list để tiết kiệm dung lượng sử dụng.</P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_14a.png"></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="BOX-SIZING: border-box !important; TEXT-DECORATION: underline; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Cách 
+khắc phục:</STRONG></SPAN></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Vào 
+mục<STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><SPAN>&nbsp;</SPAN>Manage 
+=&gt; Archiving Options =&gt; Archive messages?</STRONG><SPAN>&nbsp;</SPAN>=&gt; 
+chọn<SPAN>&nbsp;</SPAN><STRONG 
+style="BOX-SIZING: border-box !important; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">No</STRONG></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><IMG alt="" src="image/mailing-list_14b.png"></P>
+<P 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; LINE-HEIGHT: 1.6; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">Với 
+các<SPAN>&nbsp;</SPAN></SPAN><STRONG 
+style="BOX-SIZING: border-box !important; FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; OUTLINE-COLOR: invert; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">mailing 
+list đang bị chiếm dung lượng lớn</STRONG><SPAN 
+style="FONT-SIZE: 16px; FONT-FAMILY: RobotoCondensed, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><SPAN>&nbsp;</SPAN>thì 
+sau khi cấu hình tắt chức năng lưu trữ như trên,cần gửi yêu cầu&nbsp;để vào 
+server chạy lệnh xóa dung lượng lưu trữ của mailing list vì trên giao diện admin 
+cpanel không có chức năng xóa.</SPAN></P></SPAN></div>
+<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
 
 </body>
 </html>

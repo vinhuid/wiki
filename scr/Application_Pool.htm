@@ -17,163 +17,157 @@ html,body {
 
 
 
-
+<meta http-equiv="X-UA-Compatible" content="IE=8">
 <style>
-html,div { margin: 0; padding: 0;}
+html {
+	overflow-y:scroll;
+}
 
 body {
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
-	height: 100%;
+	overflow: auto; 
+	background-color: #FFFFFF; 
+}
+
+#winchm_template_top{
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #00CC00;
+
+	width: auto;
+	background-color: #A6CAF0;
+	text-align: left;
+	background-image: url('template/hgrad.gif');
+	background-repeat: repeat;
+	
+}
+
+#winchm_template_navigation{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-right: 5px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #808080; 
+
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #C1C1C1;
+
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #DBDBDB;
+	
+	background-color: #FFFFFF;
+	width: auto;
 }
 
 #winchm_template_button{
 	float: right;
-	width: 93px;
-	top: 7px;
+	top: -3px;
 	position: relative;
 	text-align: right;
-	right: 5px;
+	right: -5px;
 	height: auto;
 }
 
-#winchm_template_top{
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px solid #9B9B9B;
-	background-color: #B1CEFE;
-}
-
-#winchm_template_navigation{
-	margin: 0px;
-	padding-top: 7px;
-	padding-left: 7px;
-	padding-bottom: 3px;
-	padding-right: 0px;
-	font-size: 8.5pt;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #585858;
-}
-
 #winchm_template_title{
-	margin: 0px;
-	padding-top: 4px;
-	padding-left: 7px;
-	padding-bottom: 7px;
-	padding-right: 0px;
-	font-size: 18px; 
-	font-family: Verdana, Geneva, sans-serif;
-	color: #363636;
-}
+	font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: 353535;	
 
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #C7C7C7;
+
+	width: auto;
+	background-color: #FFFFFF;
+	text-align: left;
+}
 #winchm_template_content{
-	margin-top: 20px;
+	padding: 0px;
+	margin-top: 15px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-right: 15px;
+
 	width: auto  !important;
 	width: 100%;
 }
 
 #winchm_template_footer{
 	border-width: 1px;
-	border-color: #B1CEFE;
+	border-color: #c0c0c0;
 	border-top-style: solid;
-	margin-top: 15px;
+	
+	margin-top: 0px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	margin-right: 15px;
-	padding-top: 7px;
+
+	padding-top: 6px;
 	padding-left: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	padding-right: 0px;
+
 	font-family: arial, helvetica, sans-serif;
-	font-size: 8.5pt;
-	color: #696969;
-	width: auto;
-	text-align: left;
+	font-size: 9px;
+	color: #909090;
+
+	text-align: left;	
+	width: auto;	
 }
 
+#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
+#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
 
-#winchm_template_container{
-	margin: 0px;
-	padding: 0px;
-	position: static;
-	padding-bottom: 3px;
-	overflow: auto;
-	background-color: #FFFFFF;
-}
-
+a:link	{text-decoration: underline; color:#0033cc}
+a:visited  {text-decoration: underline; color: #0033cc}
+a:active {text-decoration: underline; color: #0033cc }
+a:hover {text-decoration: underline;color: #ff0000;}
 
 @media print
 {
-#winchm_template_container{
-	position: static;	
-	margin: 0px;
-	padding: 5px;
-	
-	width: auto;
-	height: auto;
-	overflow: auto;
-}
 #winchm_template_button{
 visibility:hidden;
 }
 }
-
-#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
-#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
-#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
-#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
-
-A:link	{text-decoration: underline; color:#0033CC}
-A:visited  {text-decoration: underline; color: #0033CC}
-A:active {text-decoration: underline; color: #0033CC }
-A:hover {text-decoration: underline;color: #FF0000;}
 </style>
-<script type="text/javascript">
-function isMobile(){
-Agent = window.navigator.userAgent;
-if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
-return true;
-}else{
-return false;	
-}
-
-}
-function d_onresize(){
-if (window.navigator.userAgent.indexOf("MSIE")>=1){
-document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
-document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
-}
-document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
-}
-
-function d_onbeforeprint(){
-document.getElementById('winchm_template_container').style.width = 'auto';
-document.getElementById('winchm_template_container').style.height = 'auto';
-}
-
-function d_onafterprint(){
-d_onresize();
-}
-
-if(!isMobile()){
-
-window.onload = d_onresize;
-window.onresize = d_onresize;
-window.onbeforeprint = d_onbeforeprint;
-window.onafterprint = d_onafterprint;
-
-document.write("<style>\n");
-document.write("body {overflow: hidden;}\n");
-document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
-document.write("</style>\n");
-}
-
-</script>
 </head>
 
 <body><script language="JavaScript" type="text/JavaScript">
@@ -201,18 +195,122 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </script> 
 
 
-<div id="winchm_template_top">
-	<div id="winchm_template_button"><A href="$$unsavedpage4.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_g.gif" border="0"></div>
-	<div id="winchm_template_navigation">Help &gt; 
+<div id="winchm_template_top"><div id="winchm_template_button"><A href="$$unsavedpage4.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><img id="winchm_template_next" alt="Next topic" src="template/btn_next_g.gif" border="0"></div>
+<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage4.htm">Internet Information Services (IIS)</A> &gt; </div>
-	<div id="winchm_template_title">($Tài liệu lưu hành nội 
-bộ$)</div>
-</div>
-<div id="winchm_template_container">
-	<div id="winchm_template_content">($vinhbc$)</div>	
-	<div id="winchm_template_footer">Copyright © 2016. All rights 
-reserved. (To change the copyright info, just edit it in template.)</div>
-</div>
+<div id="winchm_template_title">Application Pool</div>
+<div id="winchm_template_content">
+<P>Để tối ưu hóa IIS (Internet Information Services) và sử dụng CPU thay vì RAM 
+trong quá trình phục vụ ứng dụng web, bạn có thể thực hiện các bước sau để điều 
+chỉnh cấu hình IIS và ứng dụng nhằm cải thiện việc quản lý tài nguyên:</P>
+<H3>1. <STRONG>Điều chỉnh Application Pool Settings</STRONG>:</H3>
+<P>IIS sử dụng "Application Pool" để quản lý các ứng dụng web. Việc điều chỉnh 
+thiết lập của Application Pool có thể giúp giảm việc tiêu thụ RAM và chuyển tài 
+nguyên sang CPU.</P>
+<UL>
+  <LI>
+  <P><STRONG>Idle Timeout</STRONG>: Đây là khoảng thời gian sau đó một ứng dụng 
+  trong Application Pool sẽ bị "nghỉ" nếu không có yêu cầu mới. Việc giảm thời 
+  gian này giúp giải phóng bộ nhớ sớm hơn.</P>
+  <OL>
+    <LI>Mở <STRONG>IIS Manager</STRONG>.</LI>
+    <LI>Chọn <STRONG>Application Pools</STRONG>.</LI>
+    <LI>Chọn Application Pool của ứng dụng cần điều chỉnh.</LI>
+    <LI>Chọn <STRONG>Advanced Settings</STRONG>.</LI>
+    <LI>Trong mục <STRONG>Idle Time-out (minutes)</STRONG>, giảm số phút từ 20 
+    (mặc định) xuống một giá trị nhỏ hơn, ví dụ như 5 phút.</LI></OL></LI>
+  <LI>
+  <P><STRONG>Limit Maximum Used Memory (Private Memory Limit)</STRONG>: Đây là 
+  giới hạn bộ nhớ tối đa mà một Application Pool có thể sử dụng.</P>
+  <OL>
+    <LI>Trong <STRONG>Advanced Settings</STRONG> của Application Pool, tìm mục 
+    <STRONG>Private Memory Limit (KB)</STRONG>.</LI>
+    <LI>Giới hạn bộ nhớ tiêu thụ bằng cách đặt giá trị này thành 0 hoặc một giá 
+    trị cụ thể phù hợp với ứng dụng của bạn.</LI></OL></LI>
+  <LI>
+  <P><STRONG>Reduce Recycling</STRONG>: Việc recyle quá thường xuyên có thể 
+  khiến IIS sử dụng nhiều RAM hơn.</P>
+  <OL>
+    <LI>Trong <STRONG>Advanced Settings</STRONG>, thiết lập giá trị 
+    <STRONG>Regular Time Interval</STRONG> thành khoảng thời gian lớn hơn để hạn 
+    chế việc tái khởi động Application Pool.</LI></OL></LI></UL>
+<H3>2. <STRONG>Giảm tiêu thụ bộ nhớ của ứng dụng .NET</STRONG>:</H3>
+<P>Nếu ứng dụng của bạn được viết bằng ASP.NET, bạn có thể kiểm soát tiêu thụ bộ 
+nhớ bằng cách tối ưu hóa các quy trình.</P>
+<UL>
+  <LI>
+  <P><STRONG>Disable ViewState</STRONG>: ViewState giúp duy trì trạng thái của 
+  form giữa các yêu cầu nhưng có thể tốn nhiều RAM.</P>
+  <UL>
+    <LI>Đặt thuộc tính <CODE>EnableViewState="false"</CODE> trong các trang 
+    ASP.NET nơi không cần lưu trạng thái.</LI></UL></LI>
+  <LI>
+  <P><STRONG>Optimize Garbage Collection</STRONG>:</P>
+  <OL>
+    <LI>Trong tệp cấu hình của ứng dụng (<CODE>web.config</CODE>), bạn có thể 
+    bật chế độ <STRONG>Concurrent Garbage Collection</STRONG>:<PRE class=!overflow-visible><DIV class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative"><DIV class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9">xml</DIV><DIV class="sticky top-9 md:top-[5.75rem]"><DIV class="absolute bottom-0 right-2 flex h-9 items-center"><DIV class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"><SPAN data-state="closed"><BUTTON class="flex gap-1 items-center py-1"><?XML:NAMESPACE PREFIX = "[default] http://www.w3.org/2000/svg" NS = "http://www.w3.org/2000/svg" /><svg class=icon-sm xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24"><path fill="currentColor" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>Sao chép mã</BUTTON></SPAN></DIV></DIV></DIV><DIV class="overflow-y-auto p-4" dir=ltr><CODE class="!whitespace-pre hljs language-xml"><SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
+  <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>runtime</SPAN>&gt;</SPAN>
+    <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>gcConcurrent</SPAN> <SPAN class=hljs-attr>enabled</SPAN>=<SPAN class=hljs-string>"true"</SPAN> /&gt;</SPAN>
+  <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>runtime</SPAN>&gt;</SPAN>
+<SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
+</CODE></DIV></DIV></PRE></LI></OL></LI>
+  <LI>
+  <P><STRONG>Enable Server-Side Output Caching</STRONG>: IIS hỗ trợ bộ nhớ đệm 
+  phía server, điều này giúp giảm số lần thực thi mã, giảm tải CPU, tuy nhiên 
+  cần quản lý bộ nhớ đệm để tối ưu RAM.</P>
+  <OL>
+    <LI>Trong tệp <CODE>web.config</CODE>, bật bộ nhớ đệm cho các yêu cầu thường 
+    xuyên:<PRE class=!overflow-visible><DIV class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative"><DIV class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9">xml</DIV><DIV class="sticky top-9 md:top-[5.75rem]"><DIV class="absolute bottom-0 right-2 flex h-9 items-center"><DIV class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"><SPAN data-state="closed"><BUTTON class="flex gap-1 items-center py-1"><svg class=icon-sm xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24"><path fill="currentColor" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>Sao chép mã</BUTTON></SPAN></DIV></DIV></DIV><DIV class="overflow-y-auto p-4" dir=ltr><CODE class="!whitespace-pre hljs language-xml"><SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
+  <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>system.web</SPAN>&gt;</SPAN>
+    <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>caching</SPAN>&gt;</SPAN>
+      <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>outputCacheSettings</SPAN>&gt;</SPAN>
+        <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>outputCacheProfiles</SPAN>&gt;</SPAN>
+          <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>add</SPAN> <SPAN class=hljs-attr>name</SPAN>=<SPAN class=hljs-string>"CacheProfile"</SPAN>
+               <SPAN class=hljs-attr>duration</SPAN>=<SPAN class=hljs-string>"60"</SPAN>
+               <SPAN class=hljs-attr>varyByParam</SPAN>=<SPAN class=hljs-string>"none"</SPAN> /&gt;</SPAN>
+        <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>outputCacheProfiles</SPAN>&gt;</SPAN>
+      <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>outputCacheSettings</SPAN>&gt;</SPAN>
+    <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>caching</SPAN>&gt;</SPAN>
+  <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>system.web</SPAN>&gt;</SPAN>
+<SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
+</CODE></DIV></DIV></PRE></LI></OL></LI></UL>
+<H3>3. <STRONG>Sử dụng HTTP Compression</STRONG>:</H3>
+<P>Việc bật nén HTTP có thể giảm kích thước dữ liệu truyền từ server đến client, 
+từ đó giảm tải RAM bằng cách giảm dữ liệu xử lý.</P>
+<OL>
+  <LI>Trong <STRONG>IIS Manager</STRONG>, chọn máy chủ.</LI>
+  <LI>Trong mục <STRONG>IIS</STRONG>, chọn <STRONG>Compression</STRONG>.</LI>
+  <LI>Bật cả hai tùy chọn <STRONG>Enable dynamic content compression</STRONG> và 
+  <STRONG>Enable static content compression</STRONG>.</LI></OL>
+<H3>4. <STRONG>Giới hạn CPU Usage (Processor Throttling)</STRONG>:</H3>
+<P>Nếu muốn hạn chế CPU sử dụng, bạn có thể giới hạn mức tiêu thụ CPU của từng 
+Application Pool.</P>
+<OL>
+  <LI>Trong <STRONG>IIS Manager</STRONG>, chọn <STRONG>Application 
+  Pools</STRONG>.</LI>
+  <LI>Chọn Application Pool cần điều chỉnh và vào <STRONG>Advanced 
+  Settings</STRONG>.</LI>
+  <LI>Trong mục <STRONG>CPU</STRONG>, đặt giá trị <STRONG>Limit</STRONG> để giới 
+  hạn mức CPU (theo phần trăm).</LI></OL>
+<H3>5. <STRONG>Chạy ứng dụng trên nhiều worker processes (Web 
+Garden)</STRONG>:</H3>
+<P>Bạn có thể cấu hình IIS để chạy nhiều worker process cho một ứng dụng, điều 
+này sẽ chuyển tài nguyên xử lý sang CPU nhiều hơn thay vì RAM.</P>
+<OL>
+  <LI>Trong <STRONG>IIS Manager</STRONG>, chọn <STRONG>Application 
+  Pools</STRONG>.</LI>
+  <LI>Chọn Application Pool của ứng dụng.</LI>
+  <LI>Chọn <STRONG>Advanced Settings</STRONG>.</LI>
+  <LI>Trong mục <STRONG>Maximum Worker Processes</STRONG>, đặt giá trị lớn hơn 1 
+  (mặc định là 1) để tăng số worker process chạy đồng thời.</LI></OL>
+<HR>
+
+<P>Việc tối ưu IIS để sử dụng CPU thay vì RAM đòi hỏi phải cân bằng giữa tài 
+nguyên hệ thống và yêu cầu cụ thể của ứng dụng. Các bước trên giúp kiểm soát 
+tiêu thụ bộ nhớ, sử dụng CPU hiệu quả hơn, từ đó cải thiện hiệu suất tổng thể 
+của ứng dụng.</P></div>
+<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
 
 </body>
 </html>

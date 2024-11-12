@@ -17,163 +17,157 @@ html,body {
 
 
 
-
+<meta http-equiv="X-UA-Compatible" content="IE=8">
 <style>
-html,div { margin: 0; padding: 0;}
+html {
+	overflow-y:scroll;
+}
 
 body {
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
-	height: 100%;
+	overflow: auto; 
+	background-color: #FFFFFF; 
+}
+
+#winchm_template_top{
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #00CC00;
+
+	width: auto;
+	background-color: #A6CAF0;
+	text-align: left;
+	background-image: url('template/hgrad.gif');
+	background-repeat: repeat;
+	
+}
+
+#winchm_template_navigation{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-right: 5px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #808080; 
+
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #C1C1C1;
+
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #DBDBDB;
+	
+	background-color: #FFFFFF;
+	width: auto;
 }
 
 #winchm_template_button{
 	float: right;
-	width: 93px;
-	top: 7px;
+	top: -3px;
 	position: relative;
 	text-align: right;
-	right: 5px;
+	right: -5px;
 	height: auto;
 }
 
-#winchm_template_top{
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px solid #9B9B9B;
-	background-color: #B1CEFE;
-}
-
-#winchm_template_navigation{
-	margin: 0px;
-	padding-top: 7px;
-	padding-left: 7px;
-	padding-bottom: 3px;
-	padding-right: 0px;
-	font-size: 8.5pt;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #585858;
-}
-
 #winchm_template_title{
-	margin: 0px;
-	padding-top: 4px;
-	padding-left: 7px;
-	padding-bottom: 7px;
-	padding-right: 0px;
-	font-size: 18px; 
-	font-family: Verdana, Geneva, sans-serif;
-	color: #363636;
-}
+	font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: 353535;	
 
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #C7C7C7;
+
+	width: auto;
+	background-color: #FFFFFF;
+	text-align: left;
+}
 #winchm_template_content{
-	margin-top: 20px;
+	padding: 0px;
+	margin-top: 15px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-right: 15px;
+
 	width: auto  !important;
 	width: 100%;
 }
 
 #winchm_template_footer{
 	border-width: 1px;
-	border-color: #B1CEFE;
+	border-color: #c0c0c0;
 	border-top-style: solid;
-	margin-top: 15px;
+	
+	margin-top: 0px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	margin-right: 15px;
-	padding-top: 7px;
+
+	padding-top: 6px;
 	padding-left: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	padding-right: 0px;
+
 	font-family: arial, helvetica, sans-serif;
-	font-size: 8.5pt;
-	color: #696969;
-	width: auto;
-	text-align: left;
+	font-size: 9px;
+	color: #909090;
+
+	text-align: left;	
+	width: auto;	
 }
 
+#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
+#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
 
-#winchm_template_container{
-	margin: 0px;
-	padding: 0px;
-	position: static;
-	padding-bottom: 3px;
-	overflow: auto;
-	background-color: #FFFFFF;
-}
-
+a:link	{text-decoration: underline; color:#0033cc}
+a:visited  {text-decoration: underline; color: #0033cc}
+a:active {text-decoration: underline; color: #0033cc }
+a:hover {text-decoration: underline;color: #ff0000;}
 
 @media print
 {
-#winchm_template_container{
-	position: static;	
-	margin: 0px;
-	padding: 5px;
-	
-	width: auto;
-	height: auto;
-	overflow: auto;
-}
 #winchm_template_button{
 visibility:hidden;
 }
 }
-
-#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
-#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
-#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
-#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
-
-A:link	{text-decoration: underline; color:#0033CC}
-A:visited  {text-decoration: underline; color: #0033CC}
-A:active {text-decoration: underline; color: #0033CC }
-A:hover {text-decoration: underline;color: #FF0000;}
 </style>
-<script type="text/javascript">
-function isMobile(){
-Agent = window.navigator.userAgent;
-if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
-return true;
-}else{
-return false;	
-}
-
-}
-function d_onresize(){
-if (window.navigator.userAgent.indexOf("MSIE")>=1){
-document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
-document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
-}
-document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
-}
-
-function d_onbeforeprint(){
-document.getElementById('winchm_template_container').style.width = 'auto';
-document.getElementById('winchm_template_container').style.height = 'auto';
-}
-
-function d_onafterprint(){
-d_onresize();
-}
-
-if(!isMobile()){
-
-window.onload = d_onresize;
-window.onresize = d_onresize;
-window.onbeforeprint = d_onbeforeprint;
-window.onafterprint = d_onafterprint;
-
-document.write("<style>\n");
-document.write("body {overflow: hidden;}\n");
-document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
-document.write("</style>\n");
-}
-
-</script>
 </head>
 
 <body><script language="JavaScript" type="text/JavaScript">
@@ -201,18 +195,388 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </script> 
 
 
-<div id="winchm_template_top">
-	<div id="winchm_template_button"><A href="$$unsavedpage1.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="Cách_kiểm_tra_Windows_bản_quyền_hay_crack.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
-	<div id="winchm_template_navigation">Help &gt; 
+<div id="winchm_template_top"><div id="winchm_template_button"><A href="$$unsavedpage1.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><A href="Cách_kiểm_tra_Windows_bản_quyền_hay_crack.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template/btn_next_n.gif" border="0"></a></div>
+<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage1.htm">Hệ điều hành</A> &gt; </div>
-	<div id="winchm_template_title">($Tài liệu lưu hành nội 
-bộ$)</div>
-</div>
-<div id="winchm_template_container">
-	<div id="winchm_template_content">($vinhbc$)</div>	
-	<div id="winchm_template_footer">Copyright © 2016. All rights 
-reserved. (To change the copyright info, just edit it in template.)</div>
-</div>
+<div id="winchm_template_title">Sử dụng Slmgr để kéo dài bản quyền Windows</div>
+<div id="winchm_template_content">
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">1. 
+Mở Command Prompt dưới quyền Admin</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Mở Command Prompt dưới quyền Admin" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 345px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Mở Command Prompt dưới quyền Admin" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/command-prompt-admin.png" 
+width=650 height=345  data-was-processed="true" data-i="1" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/command-prompt-admin.png"></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Trên 
+Windows 8 hoặc Windows 10 bạn có thể kích chuột phải vào nút Start hoặc nhấn tổ 
+hợp phím<SPAN>&nbsp;</SPAN><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Windows 
++ X</STRONG>, sau đó chọn<SPAN>&nbsp;</SPAN><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Command 
+Prompt (Admin)</STRONG>.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Trên 
+Windows 7, bạn gõ từ khóa Command Prompt vào khung Search trên Menu Start sau đó 
+kích chuột phải vào Command Prompt chọn<SPAN>&nbsp;</SPAN><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Run 
+as Administrator.</STRONG></P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">2. 
+Kiểm tra thông tin Activation, bản quyền (License) và ngày hết hạn (Expiration 
+Date)</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"></P>
+<DIV id=adbro class="adbro-md adbro-xs adbro--move" 
+style="OVERFLOW: hidden; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BORDER-BOTTOM: 0px; POSITION: relative; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px auto -365px; Z-INDEX: 1; DISPLAY: block; TOP: 0px; PADDING-RIGHT: 0px">
+<DIV class=adbro-fpt 
+style="BOX-SIZING: border-box; OVERFLOW: hidden; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: 650px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; TOP: 0px; PADDING-RIGHT: 0px; BOTTOM: 0px; animation: 0.5s ease 0s 1 normal both running moveDownMdLg">
+<DIV class="adbro-fpt__block adbro-takeover-replay" 
+style="BOX-SIZING: border-box; OVERFLOW: hidden; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BACKGROUND: url(../images/fpt-block-bg.png) 50% 50%; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; Z-INDEX: 2; DISPLAY: block !important; TOP: 0px; PADDING-RIGHT: 0px; animation: 0.5s ease 0s 1 normal forwards running slideOutDown24"><A 
+class=adbro-fpt__block-link 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: 0px; POSITION: absolute; BACKGROUND-POSITION: 50% 50%; COLOR: rgb(0,51,153); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: block !important; TOP: 0px; PADDING-RIGHT: 0px; background-size: contain" 
+href="https://fptshop.com.vn/tivi?utm_source=Adbro&amp;utm_medium=banner&amp;utm_campaign=TV+Euro&amp;utm_content=hot-sale" 
+target=_blank  data-track="true">
+<DIV class="adbro-fpt__block-text adbro-fpt__block-text--1" 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BACKGROUND-IMAGE: url(../images/fpt-block-text.png); BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: 0px; POSITION: absolute; BACKGROUND-POSITION: 50% 50%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; TOP: 0px; PADDING-RIGHT: 0px; animation: 0.7s ease 1.7s 1 normal both running fadeInDown24; background-size: contain">
+<DIV class=adbro-fpt__block-img-light 
+style='BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; TOP: 0px; PADDING-RIGHT: 0px; mask: url("../images/fpt-block-text.png") 50% 50% / contain no-repeat'></DIV></DIV>
+<DIV class="adbro-fpt__block-img adbro-fpt__block-img--1" 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BACKGROUND-IMAGE: url(../images/fpt-block-img.png); BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: 0px; POSITION: absolute; BACKGROUND-POSITION: center bottom; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; TOP: 0px; PADDING-RIGHT: 0px; animation: 0.7s ease 1.8s 1 normal both running fadeInUp24; background-size: contain">
+<DIV class=adbro-fpt__block-img-light 
+style='BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; TOP: 0px; PADDING-RIGHT: 0px; mask: url("../images/fpt-block-img.png") center bottom / contain no-repeat'></DIV></DIV>
+<DIV class=adbro-fpt__block-logo 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 365px; BORDER-RIGHT: 0px; WIDTH: 650px; BACKGROUND-IMAGE: url(../images/fpt-block-logo.png); BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: 0px; POSITION: absolute; BACKGROUND-POSITION: center top; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; TOP: 0px; PADDING-RIGHT: 0px; animation: 0.5s ease 1.7s 1 normal both running fadeInDown24; background-size: contain"></DIV></A>
+<DIV class=adbro-close 
+style="BOX-SIZING: border-box; CURSOR: pointer; BORDER-TOP: 0px; HEIGHT: 22px; BORDER-RIGHT: 0px; WIDTH: 22px; BACKGROUND: url(https://cdn.adbro.me/inimage/images/adbro-close.svg); RIGHT: 10px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; Z-INDEX: 1; TOP: 10px; PADDING-RIGHT: 0px; BOTTOM: auto; animation: 1s ease 0.4s 1 normal both running fadeIn24"></DIV></DIV></DIV>
+<DIV class="adbro-link adbro-moat-beacon" 
+style="BORDER-TOP: 0px; HEIGHT: 120px; BORDER-RIGHT: 0px; RIGHT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; BOTTOM: 0px; animation: 0.5s ease 0s 1 normal both running moveDownMdLg"></DIV><A 
+class=adbro-link 
+style="TEXT-DECORATION: none; BORDER-TOP: 0px; HEIGHT: 120px; BORDER-RIGHT: 0px; RIGHT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute; COLOR: rgb(0,51,153); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; BOTTOM: 0px; animation: 0.5s ease 0s 1 normal both running moveDownMdLg" 
+href="https://fptshop.com.vn/tivi?utm_source=Adbro&amp;utm_medium=banner&amp;utm_campaign=TV+Euro&amp;utm_content=hot-sale" 
+target=_blank  data-track="true"></A></DIV>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Kiểm tra thông tin Activation" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 365px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Kiểm tra thông tin Activation" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/kiem-tra-active-ban-quyen.png" 
+width=650 height=365  data-was-processed="true" data-i="2" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/kiem-tra-active-ban-quyen.png" 
+data-adbro-processed="true"></P>
+<P></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Để 
+hiển thị các thông tin bản quyền, kích hoạt trên hệ thống hiện tại, bạn nhập câu 
+lệnh dưới đây vào cửa sổ Command Prompt:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/dli</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Nếu 
+muốn hiển thị chi tiết thông tin bản quyền - bao gồm mã Activation ID, mã 
+Installation ID và một số thông tin chi tiết khác, bạn sử dụng câu lệnh:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/dlv</STRONG></P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">3. 
+Kiểm tra ngày hết hạn bản quyền</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Kiểm tra ngày hết hạn bản quyền" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Kiểm tra ngày hết hạn bản quyền" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/kiem-tra-het-han-ban-quyen.png" 
+width=650 height=300 data-was-processed="true" data-i="3" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/kiem-tra-het-han-ban-quyen.png"></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Để 
+hiển thị ngày hết hạn bản quyền, bạn sử dụng câu lệnh dưới đây:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/xpr</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Lưu 
+ý:</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Câu 
+lệnh chỉ hữu ích trên hệ thống Windows được kích hoạt qua server KMS (máy chủ 
+KMS). Các phiên bản Retail và nhiều phiên bản khác phải có bản quyền vĩnh viễn, 
+không hết hạn.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Nếu 
+bạn không được cung cấp Product Key, nó sẽ hiển thị thông báo lỗi trên màn 
+hình.</P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">3. 
+Gỡ bỏ Product Key</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Gỡ bỏ Product Key" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Gỡ bỏ Product Key" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/go-product-key-1.png" 
+width=650 height=300 data-was-processed="true" data-i="4" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/go-product-key-1.png"></P>
+<DIV id=articleads2 class="adbox in-article adsense" 
+style="FONT-SIZE: 16px; BORDER-TOP: rgb(238,238,238) 1px solid; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: rgb(238,238,238) 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(238,238,238) 1px solid; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: both; BORDER-LEFT: rgb(238,238,238) 1px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 20px auto; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><INS class=adsbygoogle 
+style="BORDER-TOP: 0px; HEIGHT: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px" 
+data-ad-status="unfilled" data-adsbygoogle-status="done" 
+data-ad-slot="4889239415" data-ad-client="ca-pub-9275417305531302" 
+data-ad-layout="in-article" data-ad-format="fluid">
+<DIV id=aswift_2_host 
+style="OVERFLOW: hidden; BORDER-TOP: medium none; HEIGHT: 0px; BORDER-RIGHT: medium none; WIDTH: 694px; BORDER-BOTTOM: medium none; POSITION: relative; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: medium none; MARGIN: 0px; DISPLAY: inline-block; PADDING-RIGHT: 0px; VISIBILITY: visible; BACKGROUND-COLOR: transparent; opacity: 0"><IFRAME 
+tabIndex=0 aria-label=Advertisement id=aswift_2 title=Advertisement 
+style="MAX-WIDTH: 100%; BORDER-TOP: 0px; HEIGHT: 0px; BORDER-RIGHT: 0px; WIDTH: 694px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: auto; DISPLAY: block; TOP: 0px; PADDING-RIGHT: 0px" 
+height=0 marginHeight=0 
+src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9275417305531302&amp;output=html&amp;h=174&amp;slotname=4889239415&amp;adk=3991455380&amp;adf=715936819&amp;pi=t.ma~as.4889239415&amp;w=694&amp;abgtt=5&amp;fwrn=4&amp;lmt=1720514212&amp;rafmt=11&amp;format=694x174&amp;url=https%3A%2F%2Fquantrimang.com%2Fcong-nghe%2Fsuu-dung-slmgr-de-keo-dai-ban-quyen-windows-121257&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTI2LjAuNjQ3OC4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siTm90L0EpQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjEyNi4wLjY0NzguMTI3Il0sWyJHb29nbGUgQ2hyb21lIiwiMTI2LjAuNjQ3OC4xMjciXV0sMF0.&amp;dt=1720515393787&amp;bpp=1&amp;bdt=665&amp;idt=243&amp;shv=r20240702&amp;mjsv=m202407030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie_enabled=1&amp;eoidce=1&amp;prev_fmts=1048x280%2C694x174&amp;correlator=6941199142594&amp;frm=20&amp;pv=1&amp;ga_vid=366264161.1720515394&amp;ga_sid=1720515394&amp;ga_hid=1953715669&amp;ga_fc=1&amp;rplot=4&amp;u_tz=420&amp;u_his=3&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=429&amp;ady=3436&amp;biw=1903&amp;bih=911&amp;scr_x=0&amp;scr_y=0&amp;eid=44759837%2C44795922%2C95330412%2C95331690%2C95334509%2C95334527%2C95334578%2C95334828%2C95337058%2C31084187%2C31078663%2C31078665%2C31078668%2C31078670&amp;oid=2&amp;pvsid=779750685206864&amp;tmod=392022262&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1032%2C1920%2C911&amp;vis=1&amp;rsz=%7C%7CoeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;dtd=245" 
+frameBorder=0 width=694 allowTransparency name=aswift_2 marginWidth=0 
+scrolling=no data-google-query-id="CPr5o6bLmYcDFSKI6QUdg2kO-g" 
+data-load-complete="true" data-google-container-id="a!3" 
+allow="attribution-reporting; run-ad-auction" 
+sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
+browsingtopics="true"></IFRAME></DIV></INS></DIV>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Bạn 
+có thể sử dụng Slmgr để gỡ bỏ Product Key trên phiên bản Windows hiện tại.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Nhập 
+câu lệnh dưới đây vào cửa sổ Command Prompt rồi tiến hành khởi động lại máy tính 
+của bạn:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/upk</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Ngoài 
+ra Windows cũng lưu trữ Product Key trên Registry, trong một số trường hợp cần 
+thiết Windows sẽ sử dụng key trên Registry để cài đặt máy tính của bạn. Do đó 
+bạn cũng phải tiến hành gỡ bỏ Product Key trên Registry.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Sử 
+dụng câu lệnh dưới đây để gỡ bỏ Product Key trên Registry:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/cpky</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit"><IMG 
+title="Gỡ bỏ Product Key" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Gỡ bỏ Product Key" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/go-product-key-2.png" 
+width=650 height=300 data-was-processed="true" data-i="5" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/go-product-key-2.png"></STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Việc 
+chạy một câu lệnh trên không gỡ bỏ cài đặt Product Key được. Nó chỉ gỡ bỏ 
+Product Key trên Registry để hệ thống không thể truy cập được trên Registry.</P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">4. 
+Thiết lập hoặc thay đổi Product Key</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Thiết lập hoặc thay đổi Product Key" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Thiết lập hoặc thay đổi Product Key" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/thya-doi-productkey.png" 
+width=650 height=300 data-was-processed="true" data-i="6" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/thya-doi-productkey.png"></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Bạn 
+có thể sử dụng slmgr.vbs để nhập một Product Key mới. Nếu hệ thống Windows của 
+bạn đã có Product Key, bạn có thể sử dụng câu lệnh dưới đây để thay thế Product 
+Key cũ bằng một Product Key mới:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/ipk #####-#####-#####-#####-#####</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Lưu 
+ý:</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Thay 
+thế #####-#####-#####-#####-##### bằng Product Key.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Câu 
+lệnh sẽ kiểm tra Product Key mà bạn nhập có trùng với Product Key trước hay 
+không.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Sau 
+khi chạy câu lệnh xong, Microsoft sẽ hiển thị thông báo khởi động lại máy tính 
+của bạn.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Ngoài 
+ra bạn cũng có thể thay đổi Product Key trong ứng dụng<SPAN>&nbsp;</SPAN><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Settings 
+app</STRONG><SPAN>&nbsp;</SPAN>trên giao diện Activation.</P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">5. 
+Active Windows Online</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Active Windows Online" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Active Windows Online" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/active-windows-online.png" 
+width=650 height=300 data-was-processed="true" data-i="7" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/active-windows-online.png"></P>
+<DIV id=articleads3 class="adbox in-article" 
+style="FONT-SIZE: 16px; BORDER-TOP: rgb(238,238,238) 1px solid; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: rgb(238,238,238) 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(238,238,238) 1px solid; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: both; BORDER-LEFT: rgb(238,238,238) 1px solid; ORPHANS: 2; WIDOWS: 2; MARGIN: 20px auto; LETTER-SPACING: normal; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><INS class=adsbygoogle 
+style="BORDER-TOP: 0px; HEIGHT: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px" 
+data-ad-status="unfilled" data-adsbygoogle-status="done" 
+data-ad-slot="2737970258" data-ad-client="ca-pub-9275417305531302" 
+data-ad-layout="in-article" data-ad-format="fluid">
+<DIV id=aswift_3_host 
+style="OVERFLOW: hidden; BORDER-TOP: medium none; HEIGHT: 0px; BORDER-RIGHT: medium none; WIDTH: 694px; BORDER-BOTTOM: medium none; POSITION: relative; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: medium none; MARGIN: 0px; DISPLAY: inline-block; PADDING-RIGHT: 0px; VISIBILITY: visible; BACKGROUND-COLOR: transparent; opacity: 0"><IFRAME 
+tabIndex=0 aria-label=Advertisement id=aswift_3 title=Advertisement 
+style="MAX-WIDTH: 100%; BORDER-TOP: 0px; HEIGHT: 0px; BORDER-RIGHT: 0px; WIDTH: 694px; BORDER-BOTTOM: 0px; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LEFT: 0px; BORDER-LEFT: 0px; MARGIN: auto; DISPLAY: block; TOP: 0px; PADDING-RIGHT: 0px" 
+height=0 marginHeight=0 
+src="https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;client=ca-pub-9275417305531302&amp;output=html&amp;h=174&amp;slotname=2737970258&amp;adk=2246973304&amp;adf=1271775883&amp;pi=t.ma~as.2737970258&amp;w=694&amp;abgtt=5&amp;fwrn=4&amp;lmt=1720514212&amp;rafmt=11&amp;format=694x174&amp;url=https%3A%2F%2Fquantrimang.com%2Fcong-nghe%2Fsuu-dung-slmgr-de-keo-dai-ban-quyen-windows-121257&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiMTI2LjAuNjQ3OC4xMjciLG51bGwsMCxudWxsLCI2NCIsW1siTm90L0EpQnJhbmQiLCI4LjAuMC4wIl0sWyJDaHJvbWl1bSIsIjEyNi4wLjY0NzguMTI3Il0sWyJHb29nbGUgQ2hyb21lIiwiMTI2LjAuNjQ3OC4xMjciXV0sMF0.&amp;dt=1720515393787&amp;bpp=1&amp;bdt=666&amp;idt=248&amp;shv=r20240702&amp;mjsv=m202407030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Db8cf5d60aab1ebf6%3AT%3D1720515392%3ART%3D1720515392%3AS%3DALNI_MaYDK2e61_gcUGmaVh788O4_7uJnA&amp;gpic=UID%3D00000e887a14e9c1%3AT%3D1720515392%3ART%3D1720515392%3AS%3DALNI_MY05AuwQdsVP-UuL-4mGcNhYKGwrQ&amp;eo_id_str=ID%3Dd9a6d8fb6bc397cf%3AT%3D1720515392%3ART%3D1720515392%3AS%3DAA-Afja7oesWVPrwrzGZchPWoZZY&amp;prev_fmts=1048x280%2C694x174%2C694x174%2C336x280%2C336x280%2C336x672%2C0x0%2C1903x911&amp;nras=2&amp;correlator=6941199142594&amp;frm=20&amp;pv=1&amp;ga_vid=366264161.1720515394&amp;ga_sid=1720515394&amp;ga_hid=1953715669&amp;ga_fc=1&amp;rplot=4&amp;u_tz=420&amp;u_his=3&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=429&amp;ady=5018&amp;biw=1903&amp;bih=911&amp;scr_x=0&amp;scr_y=1400&amp;eid=44759837%2C44795922%2C95330412%2C95331690%2C95334509%2C95334527%2C95334578%2C95334828%2C95337058%2C31084187%2C31078663%2C31078665%2C31078668%2C31078670&amp;oid=2&amp;psts=AOrYGskxSIhP3N3gRYXyDpBM_t_Bn2P0UXZa_7ClS0ZgTUDGWpsJY0r2YahQM4H0iLyrzqvhYWnch2fSPW1EjeL2uYqf7CKo&amp;pvsid=779750685206864&amp;tmod=392022262&amp;uas=3&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1032%2C1920%2C911&amp;vis=1&amp;rsz=%7Co%7CoeEbr%7C&amp;abl=NS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=4&amp;uci=a!4&amp;btvi=5&amp;fsb=1&amp;dtd=9971" 
+frameBorder=0 width=694 allowTransparency name=aswift_3 marginWidth=0 
+scrolling=no data-google-query-id="CKSV8KrLmYcDFRaQ6QUdzjwPfQ" 
+data-load-complete="true" data-google-container-id="a!4" 
+allow="attribution-reporting; run-ad-auction" 
+sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
+browsingtopics="true"></IFRAME></DIV></INS></DIV>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Để 
+buộc Windows cố gắng Active Online, bạn sử dụng câu lệnh dưới đây:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/ato</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Nếu 
+bạn đang sử dụng phiên bản Retail, câu lệnh sẽ buộc Windows cố gắng online với 
+Server Micorsoft (máy chủ Microsoft).</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Nếu 
+hệ thống được thiết lập sử dụng máy chủ KMS để active, nó sẽ cố gắng active với 
+máy chủ KMS trên hệ thống mạng nội bộ (Local Network). Lệnh này có thể hữu ích 
+nếu Windows không kích hoạt bằng một kết nối hoặc các vấn đề máy chủ.</P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">6. 
+Active Windows Offline</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Active Windows Offline" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Active Windows Offline" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/active-windows-offline.png" 
+width=650 height=300 data-was-processed="true" data-i="8" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/active-windows-offline.png"></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Để 
+nhận mã Installation ID để Active Offline, bạn sử dụng câu lệnh dưới đây:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/dti</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Tiếp 
+theo bạn cần môt ID xác nhận để kích hoạt. Bạn có thể gọi đến trung tâm kích 
+hoạt của Microsoft để được cung cấp mã Installation ID.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Để 
+nhập ID xác nhận mà bạn vừa nhận, bạn sử dụng câu lệnh dưới đây:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/atp ACTIVATIONID</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Lưu 
+ý:</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Thay 
+thế ACTIVATIONID bằng mã ID kích hoạt mà bạn nhận được.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Sau 
+khi thực hiện xong, bạn có thể sử dụng câu lệnh: slmgr.vbs /dli or slmgr.vbs 
+/dlv commands để xác nhận bạn đã kích hoạt.</P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">7. 
+Kéo dài thời gian dùng thử</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><IMG 
+title="Kéo dài thời gian dùng thử" class="lazy lightbox loaded" 
+style="MAX-WIDTH: 100%; BORDER-TOP: rgb(204,204,204) 0px solid; HEIGHT: 300px; BORDER-RIGHT: rgb(204,204,204) 0px solid; WIDTH: 650px; BORDER-BOTTOM: rgb(204,204,204) 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 0px solid; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 0px; box-shadow: rgb(238, 238, 238) 0px 0px 1px; border-radius: 3px" 
+alt="Kéo dài thời gian dùng thử" 
+src="https://st.quantrimang.com/photos/image/2016/03/21/keo-dai-thoi-gian-dung-thui.png" 
+width=650 height=300 data-was-processed="true" data-i="9" 
+data-src="https://st.quantrimang.com/photos/image/2016/03/21/keo-dai-thoi-gian-dung-thui.png"></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Một 
+số phiên bản Windows thường giới hạn thời gian sử dụng bản thử nghiệm miễn 
+phí.Chẳng hạn như Windows 7 cung cấp 30 ngày dùng thử.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Để 
+kéo dài thời gian dùng thử bạn có thể sử dụng câu lệnh dưới đây:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/rearm</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Lệnh 
+này chỉ có thể được sử dụng nhiều lần, vì vậy bạn không thể kéo dài thời gian sử 
+dụng bản dùng thử không giới hạn.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Số 
+lượng thời gian bạn có thể sử dụng bản dùng thử phụ thuộc vào "rearm count". Bạn 
+có thể xem bằng cách sử dụng lệnh:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/dlv</STRONG></P>
+<H2 
+style="FONT-SIZE: 20px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: bold; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">8. 
+Điều khiển máy tính của bạn từ xa</H2>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Slmgr 
+thường thực hiện các hành động mà bạn chỉ định trên máy tính hiện tại.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Tuy 
+nhiên, bạn cũng có thể sử dụng Slmgr để quản lý từ xa các máy tính trên hệ thống 
+mạng của bạn nếu bạn có quyền truy cập các máy tính đó.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Lệnh 
+dưới đây để thực hiện các hành động mà bạn chỉ định trên máy tính hiện tại:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+/option</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Lệnh 
+dưới đây để điều khiển một máy tính từ xa:</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">slmgr.vbs 
+computername username password /option</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word"><STRONG 
+style="BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit">Lưu 
+ý:</STRONG></P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Bạn 
+phải có tên máy tính, tên người dùng và mật khẩu.</P>
+<P 
+style="FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; LETTER-SPACING: normal; LINE-HEIGHT: 26px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-variant-position: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word">Thay 
+thế computername username password bằng tên máy tính, tên người dùng và mật 
+khẩu.</P></div>
+<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
 
 </body>
 </html>

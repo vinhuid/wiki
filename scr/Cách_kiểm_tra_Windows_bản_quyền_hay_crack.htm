@@ -17,163 +17,157 @@ html,body {
 
 
 
-
+<meta http-equiv="X-UA-Compatible" content="IE=8">
 <style>
-html,div { margin: 0; padding: 0;}
+html {
+	overflow-y:scroll;
+}
 
 body {
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
-	height: 100%;
+	overflow: auto; 
+	background-color: #FFFFFF; 
+}
+
+#winchm_template_top{
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #00CC00;
+
+	width: auto;
+	background-color: #A6CAF0;
+	text-align: left;
+	background-image: url('template/hgrad.gif');
+	background-repeat: repeat;
+	
+}
+
+#winchm_template_navigation{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 7px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-right: 5px;
+
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #808080; 
+
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-top-color: #C1C1C1;
+
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #DBDBDB;
+	
+	background-color: #FFFFFF;
+	width: auto;
 }
 
 #winchm_template_button{
 	float: right;
-	width: 93px;
-	top: 7px;
+	top: -3px;
 	position: relative;
 	text-align: right;
-	right: 5px;
+	right: -5px;
 	height: auto;
 }
 
-#winchm_template_top{
-	padding: 0px;
-	margin: 0px;
-	border-bottom: 1px solid #9B9B9B;
-	background-color: #B1CEFE;
-}
-
-#winchm_template_navigation{
-	margin: 0px;
-	padding-top: 7px;
-	padding-left: 7px;
-	padding-bottom: 3px;
-	padding-right: 0px;
-	font-size: 8.5pt;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #585858;
-}
-
 #winchm_template_title{
-	margin: 0px;
-	padding-top: 4px;
-	padding-left: 7px;
-	padding-bottom: 7px;
-	padding-right: 0px;
-	font-size: 18px; 
-	font-family: Verdana, Geneva, sans-serif;
-	color: #363636;
-}
+	font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: 353535;	
 
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #C7C7C7;
+
+	width: auto;
+	background-color: #FFFFFF;
+	text-align: left;
+}
 #winchm_template_content{
-	margin-top: 20px;
+	padding: 0px;
+	margin-top: 15px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-right: 15px;
+
 	width: auto  !important;
 	width: 100%;
 }
 
 #winchm_template_footer{
 	border-width: 1px;
-	border-color: #B1CEFE;
+	border-color: #c0c0c0;
 	border-top-style: solid;
-	margin-top: 15px;
+	
+	margin-top: 0px;
 	margin-left: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	margin-right: 15px;
-	padding-top: 7px;
+
+	padding-top: 6px;
 	padding-left: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	padding-right: 0px;
+
 	font-family: arial, helvetica, sans-serif;
-	font-size: 8.5pt;
-	color: #696969;
-	width: auto;
-	text-align: left;
+	font-size: 9px;
+	color: #909090;
+
+	text-align: left;	
+	width: auto;	
 }
 
+#winchm_template_navigation a:link	{text-decoration: none;color: #0000ff}
+#winchm_template_navigation a:visited  {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:active {text-decoration: none; color: #0000ff}
+#winchm_template_navigation a:hover {text-decoration: none;color: #0000ff}
 
-#winchm_template_container{
-	margin: 0px;
-	padding: 0px;
-	position: static;
-	padding-bottom: 3px;
-	overflow: auto;
-	background-color: #FFFFFF;
-}
-
+a:link	{text-decoration: underline; color:#0033cc}
+a:visited  {text-decoration: underline; color: #0033cc}
+a:active {text-decoration: underline; color: #0033cc }
+a:hover {text-decoration: underline;color: #ff0000;}
 
 @media print
 {
-#winchm_template_container{
-	position: static;	
-	margin: 0px;
-	padding: 5px;
-	
-	width: auto;
-	height: auto;
-	overflow: auto;
-}
 #winchm_template_button{
 visibility:hidden;
 }
 }
-
-#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
-#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
-#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
-#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
-
-A:link	{text-decoration: underline; color:#0033CC}
-A:visited  {text-decoration: underline; color: #0033CC}
-A:active {text-decoration: underline; color: #0033CC }
-A:hover {text-decoration: underline;color: #FF0000;}
 </style>
-<script type="text/javascript">
-function isMobile(){
-Agent = window.navigator.userAgent;
-if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
-return true;
-}else{
-return false;	
-}
-
-}
-function d_onresize(){
-if (window.navigator.userAgent.indexOf("MSIE")>=1){
-document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
-document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
-}
-document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
-}
-
-function d_onbeforeprint(){
-document.getElementById('winchm_template_container').style.width = 'auto';
-document.getElementById('winchm_template_container').style.height = 'auto';
-}
-
-function d_onafterprint(){
-d_onresize();
-}
-
-if(!isMobile()){
-
-window.onload = d_onresize;
-window.onresize = d_onresize;
-window.onbeforeprint = d_onbeforeprint;
-window.onafterprint = d_onafterprint;
-
-document.write("<style>\n");
-document.write("body {overflow: hidden;}\n");
-document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
-document.write("</style>\n");
-}
-
-</script>
 </head>
 
 <body><script language="JavaScript" type="text/JavaScript">
@@ -201,18 +195,130 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 </script> 
 
 
-<div id="winchm_template_top">
-	<div id="winchm_template_button"><A href="Sử_dụng_Slmgr_để_kéo_dài_bản_quyền_Windows.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="An_Toàn_Thông_Tin.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
-	<div id="winchm_template_navigation">Help &gt; 
+<div id="winchm_template_top"><div id="winchm_template_button"><A href="Sử_dụng_Slmgr_để_kéo_dài_bản_quyền_Windows.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><A href="An_Toàn_Thông_Tin.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template/btn_next_n.gif" border="0"></a></div>
+<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage1.htm">Hệ điều hành</A> &gt; </div>
-	<div id="winchm_template_title">($Tài liệu lưu hành nội 
-bộ$)</div>
-</div>
-<div id="winchm_template_container">
-	<div id="winchm_template_content">($vinhbc$)</div>	
-	<div id="winchm_template_footer">Copyright © 2016. All rights 
-reserved. (To change the copyright info, just edit it in template.)</div>
-</div>
+<div id="winchm_template_title">Cách kiểm tra Windows bản quyền hay crack</div>
+<div id="winchm_template_content">
+<H3 id=hmenuid1 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 600 24px/37px Arial, Helvetica, sans-serif; OUTLINE-STYLE: none; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial">
+<H4 id=subhmenuid1 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 600 18px/28px Arial, Helvetica, sans-serif; OUTLINE-STYLE: none; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 5px 0px 10px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">- 
+Kiểm tra trong Windows Settings</STRONG></H4>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Đầu 
+tiên, cách đơn giản nhất là kiểm tra trong Windows Settings.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Bạn 
+nhấn vào biểu tượng<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Tìm 
+kiếm</STRONG><SPAN>&nbsp;</SPAN>trên thanh Taskbar (hoặc nhấn 
+nút<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Start</STRONG>) 
+&gt; Gõ "See if Windows is activated" &gt; Chọn<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">See 
+if Windows is activated</STRONG>.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG alt="" src="image/win01.jpg"></P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Sau 
+đó trạng thái bản quyền của máy bạn sẽ nằm trong mục<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Activation</STRONG>. 
+Nếu Windows của bạn là bản quyền thì thông báo sẽ hiển thị dòng chữ "<STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Windows 
+is activated with a digital license linked to your Microsoft account</STRONG>", 
+nếu không là bản quyền thì dòng chữ "Windows is activated by your organization" 
+sẽ xuất hiện.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG alt="" src="image/win02.jpeg"></P>
+<H4 id=subhmenuid2 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 600 18px/28px Arial, Helvetica, sans-serif; OUTLINE-STYLE: none; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 5px 0px 10px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">- 
+Kiểm tra trong Control Panel</STRONG></H4>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Bạn 
+mở<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Control 
+Panel<SPAN>&nbsp;</SPAN></STRONG>&gt; Chọn<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">System<SPAN>&nbsp;</SPAN></STRONG>hoặc 
+bạn click chuột phải vào<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">This 
+PC<SPAN>&nbsp;</SPAN></STRONG>(với máy chạy Windows 7 là My Computer) trên màn 
+hình chính &gt;<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Properties</STRONG>.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG alt="" src="image/win03.jpeg"></P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Nếu 
+Windows của bạn là bản quyền thì tại mục Windows Activation sẽ hiển thị dòng chữ 
+"<STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Windows 
+is activated</STRONG>".</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG alt="" src="image/win04.jpeg"></P>
+<P 
+style='FONT-SIZE: 15px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(119,119,119); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Windows 
+is activated</P>
+<H4 id=subhmenuid3 
+style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(51,51,51); OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT: 600 18px/28px Arial, Helvetica, sans-serif; OUTLINE-STYLE: none; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 5px 0px 10px; LETTER-SPACING: normal; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial"><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">- 
+Kiểm tra bằng Command Prompt</STRONG></H4>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Với 
+2 cách trên bạn sẽ xem được trạng thái kích hoạt của Windows đang dùng, để chắc 
+chắn hơn bạn có thể kiểm tra bằng CMD.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Bạn 
+vào ô tìm kiếm sau đó gõ "<STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">cmd</STRONG>" 
+&gt; Mở<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Command 
+Prompt</STRONG>.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Hoặc 
+bạn bấm tổ hợp phím<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Windows 
++ R<SPAN>&nbsp;</SPAN></STRONG>&gt; Gõ "<STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">cmd</STRONG>" 
+&gt; Nhấn<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Enter</STRONG>.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG alt="" src="image/win05.jpeg"></P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Tiếp 
+đến, bạn nhập "<STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">slmgr/xpr</STRONG>" 
+&gt; Nhấn<SPAN>&nbsp;</SPAN><STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Enter</STRONG>.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Lúc 
+này, cửa sổ Windows Script Host xuất hiện và hiển thị thông báo "<STRONG 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">The 
+machine is permanently activated</STRONG>" nếu Windows 
+của bạn là bản quyền.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG title="Thông báo Windows có bản quyền" class=lazy style="MAX-WIDTH: 100%; BORDER-TOP: 0px; HEIGHT: auto; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MIN-HEIGHT: 200px; BORDER-LEFT: 0px; MARGIN: 15px auto 5px; DISPLAY: block; PADDING-RIGHT: 0px" alt="Thông báo Windows có bản quyền" src="https://cdn.tgdd.vn/hoi-dap/1317479/3-cach-kiem-tra-windows-ban-quyen-chuan-xac-nhanh-chong%20(77)-800x450.jpg" data-cke-saved-src="//cdn.tgdd.vn/hoi-dap/1317479/3-cach-kiem-tra-windows-ban-quyen-chuan-xac-nhanh-chong (77)-800x450.jpg"></P>
+<P 
+style='FONT-SIZE: 15px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(119,119,119); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Thông 
+báo Windows có bản quyền</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Nếu 
+Windows của bạn chưa được kích hoạt bản quyền thì cửa sổ sẽ hiển thị như hình 
+bên dưới.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG title="Thông báo Windows chưa được kích hoạt bản quyền" class=lazy style="MAX-WIDTH: 100%; BORDER-TOP: 0px; HEIGHT: auto; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MIN-HEIGHT: 200px; BORDER-LEFT: 0px; MARGIN: 15px auto 5px; DISPLAY: block; PADDING-RIGHT: 0px" alt="Thông báo Windows chưa được kích hoạt bản quyền" src="https://cdn.tgdd.vn/hoi-dap/1317479/3-cach-kiem-tra-windows-ban-quyen-chuan-xac-nhanh-chong%20(88)-800x450.jpg" data-cke-saved-src="//cdn.tgdd.vn/hoi-dap/1317479/3-cach-kiem-tra-windows-ban-quyen-chuan-xac-nhanh-chong (88)-800x450.jpg"></P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Còn 
+nếu máy đang dùng Windows không có bản quyền thì cửa sổ sau sẽ hiển thị như hình 
+dưới đây.</P>
+<P 
+style='FONT-SIZE: 18px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'><IMG alt="" src="image/win06.jpeg"></P>
+<P 
+style='FONT-SIZE: 15px; OVERFLOW: hidden; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(119,119,119); PADDING-BOTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 10px 0px; DISPLAY: block; LETTER-SPACING: normal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-block: 0px; margin-inline: 0px; text-rendering: geometricprecision; font-variant-ligatures: normal; font-variant-caps: normal'>Thông 
+báo chi tiết Windows không có bản quyền</P></H3></div>
+<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
 
 </body>
 </html>
