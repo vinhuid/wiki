@@ -196,146 +196,145 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 
 <div id="winchm_template_top"><div id="winchm_template_button"><A href="Tách_thư_mục_temp_và_log_khi_cài_đặt_SQL_Server.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><A href="$$unsavedpage3.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template/btn_next_n.gif" border="0"></a></div>
-<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<nobr><IMG align=absMiddle src="template/logo.gif"> &nbsp;wiki</nobr></div>
 <div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage2.htm">Cơ sở dữ liệu</A> &gt; </div>
 <div id="winchm_template_title">Hạ cấp SQL Server từ 2022 xuống 2019</div>
 <div id="winchm_template_content">
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">Hạ cấp SQL Server từ phiên bản 
-2022 xuống 2019 không phải là một quá trình trực tiếp, vì SQL Server không hỗ 
-trợ downgrade giữa các phiên bản theo cách thông thường. Tuy nhiên, có một số 
-cách thực hiện thủ công để đạt được mục tiêu này:<?xml:namespace prefix = "o" ns 
-= "urn:schemas-microsoft-com:office:office" /><o:p></o:p></P>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">Các bước thực 
-hiện:<o:p></o:p></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>Hạ cấp SQL Server từ phiên bản 2022 xuống 
+2019 không phải là một quá trình trực tiếp, vì SQL Server không hỗ trợ downgrade 
+giữa các phiên bản theo cách thông thường. Tuy nhiên, có một số cách thực hiện 
+thủ công để đạt được mục tiêu này:<o:p></o:p></FONT></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>Các bước thực 
+hiện:<o:p></o:p></FONT></FONT></P>
 <OL style="MARGIN-TOP: 0in" type=1>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in">Sao 
-  lưu dữ liệu:<o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in"><FONT size=4 face="Times New Roman">Sao 
+  lưu dữ liệu:<o:p></o:p> </FONT>
   <UL style="MARGIN-TOP: 0in" type=circle>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Sao 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Sao 
     lưu toàn bộ cơ sở dữ liệu của bạn từ phiên bản SQL Server 2022. 
-    <o:p></o:p></LI>
+    <o:p></o:p></FONT></FONT>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Export 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Export 
     dữ liệu dưới dạng <I>bacpac</I>, <I>csv</I>, hoặc xuất sang tệp 
-    script.<o:p></o:p></LI></UL>
+    script.<o:p></o:p></FONT></FONT></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in">Xuất 
-  và chuyển dữ liệu thủ công:<o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in"><FONT size=4 face="Times New Roman">Xuất 
+  và chuyển dữ liệu thủ công:<o:p></o:p> </FONT>
   <UL style="MARGIN-TOP: 0in" type=circle>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Sử 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Sử 
     dụng tính năng "Generate Scripts" để xuất toàn bộ cấu trúc cơ sở dữ liệu và 
-    dữ liệu. <o:p></o:p></LI>
+    dữ liệu. <o:p></o:p></FONT></FONT>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Đảm 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Đảm 
     bảo script được tương thích với SQL Server 2019. SQL Server 2022 có thể có 
     các tính năng mới không hỗ trợ trong SQL Server 2019, nên cần kiểm tra kỹ để 
-    tránh lỗi.<o:p></o:p></LI></UL>
+    tránh lỗi.<o:p></o:p></FONT></FONT></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in">Dùng 
-  SQL Server Integration Services (SSIS):<o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in"><FONT size=4 face="Times New Roman">Dùng 
+  SQL Server Integration Services (SSIS):<o:p></o:p> </FONT>
   <UL style="MARGIN-TOP: 0in" type=circle>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Sử 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Sử 
     dụng SSIS để chuyển dữ liệu từ phiên bản SQL Server 2022 sang phiên bản SQL 
-    Server 2019.<o:p></o:p></LI></UL>
+    Server 2019.<o:p></o:p></FONT></FONT></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in">Khôi 
-  phục dữ liệu trên SQL Server 2019:<o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in"><FONT size=4 face="Times New Roman">Khôi 
+  phục dữ liệu trên SQL Server 2019:<o:p></o:p> </FONT>
   <UL style="MARGIN-TOP: 0in" type=circle>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Cài 
-    đặt SQL Server 2019. <o:p></o:p></LI>
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Cài 
+    đặt SQL Server 2019. <o:p></o:p></FONT></FONT>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Import 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Import 
     các file script hoặc <I>bacpac</I> đã tạo vào phiên bản SQL Server 2019. 
-    <o:p></o:p></LI>
+    <o:p></o:p></FONT></FONT>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Chạy 
-    các script để khôi phục cơ sở dữ liệu.<o:p></o:p></LI></UL>
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Chạy 
+    các script để khôi phục cơ sở dữ liệu.<o:p></o:p></FONT></FONT></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in">Kiểm 
-  tra tính tương thích:<o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l2 level1 lfo1; tab-stops: list .5in"><FONT size=4 face="Times New Roman">Kiểm 
+  tra tính tương thích:<o:p></o:p> </FONT>
   <UL style="MARGIN-TOP: 0in" type=circle>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in">Sau 
+    style="MARGIN: 0in 0in 8pt; mso-list: l2 level2 lfo1; tab-stops: list 1.0in"><FONT face="Times New Roman"><FONT size=4>Sau 
     khi khôi phục, kiểm tra lại toàn bộ hệ thống để đảm bảo tính tương thích và 
-    hoạt động ổn định trong SQL Server 2019.<o:p></o:p></LI></UL></OL>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">Một số lưu ý:<o:p></o:p></P>
+    hoạt động ổn định trong SQL Server 2019.<o:p></o:p></FONT></FONT></LI></UL></LI></OL>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>Một số lưu ý:<o:p></o:p></FONT></FONT></P>
 <UL style="MARGIN-TOP: 0in" type=disc>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l4 level1 lfo2; tab-stops: list .5in">Không 
+  style="MARGIN: 0in 0in 8pt; mso-list: l4 level1 lfo2; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Không 
   thể sử dụng trực tiếp tệp sao lưu từ SQL Server 2022 để khôi phục trên SQL 
-  Server 2019. <o:p></o:p></LI>
+  Server 2019. <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l4 level1 lfo2; tab-stops: list .5in">Quá 
+  style="MARGIN: 0in 0in 8pt; mso-list: l4 level1 lfo2; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Quá 
   trình này yêu cầu sự cẩn thận để tránh mất dữ liệu và các lỗi phát sinh từ sự 
-  khác biệt giữa các phiên bản.<o:p></o:p></LI></UL>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">* Các bước tạo và khôi phục tệp 
-.bacpac: <o:p></o:p></P>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">Tệp .bacpac là tệp chứa cả cấu 
+  khác biệt giữa các phiên bản.<o:p></o:p></FONT></FONT></LI></UL>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>* Các bước tạo và khôi phục tệp 
+.bacpac: <o:p></o:p></FONT></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>Tệp .bacpac là tệp chứa cả cấu 
 trúc và dữ liệu của một cơ sở dữ liệu trong SQL Server, giúp bạn dễ dàng sao lưu 
 và khôi phục cơ sở dữ liệu sang các phiên bản khác của SQL Server hoặc lên Azure 
 SQL Database. Đây là cách tốt nhất để chuyển cơ sở dữ liệu giữa các phiên bản 
 SQL Server mà không cần xuất toàn bộ dữ liệu ra các script riêng lẻ. 
-<o:p></o:p></P>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">Các bước tạo và khôi phục tệp 
-.bacpac: <o:p></o:p></P>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">1. Tạo tệp .bacpac từ SQL Server 
-2022: <o:p></o:p></P>
+<o:p></o:p></FONT></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>Các bước tạo và khôi phục tệp 
+.bacpac: <o:p></o:p></FONT></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>1. Tạo tệp .bacpac từ SQL Server 
+2022: <o:p></o:p></FONT></FONT></P>
 <UL style="MARGIN-TOP: 0in" type=disc>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in">Mở 
-  SQL Server Management Studio (SSMS). <o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Mở 
+  SQL Server Management Studio (SSMS). <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in">Kết 
-  nối với SQL Server 2022. <o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Kết 
+  nối với SQL Server 2022. <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in">Nhấp 
+  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Nhấp 
   chuột phải vào cơ sở dữ liệu mà bạn muốn sao lưu và chọn Tasks &gt; Export 
-  Data-tier Application. <o:p></o:p></LI>
+  Data-tier Application. <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in">Trình 
+  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Trình 
   hướng dẫn xuất dữ liệu sẽ xuất hiện. Chọn tùy chọn xuất dưới dạng tệp .bacpac. 
-  <o:p></o:p></LI>
+  <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in">Chọn 
+  style="MARGIN: 0in 0in 8pt; mso-list: l1 level1 lfo3; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Chọn 
   đường dẫn để lưu tệp .bacpac và nhấn Finish để hoàn tất quá trình xuất. 
-  <o:p></o:p></LI></UL>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">2. Import tệp .bacpac vào SQL 
-Server 2019: <o:p></o:p></P>
+  <o:p></o:p></FONT></FONT></LI></UL>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>2. Import tệp .bacpac vào SQL 
+Server 2019: <o:p></o:p></FONT></FONT></P>
 <UL style="MARGIN-TOP: 0in" type=disc>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in">Mở 
-  SSMS và kết nối với SQL Server 2019. <o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Mở 
+  SSMS và kết nối với SQL Server 2019. <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in">Nhấp 
+  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Nhấp 
   chuột phải vào Databases và chọn Import Data-tier Application. 
-<o:p></o:p></LI>
+<o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in">Chọn 
-  tệp .bacpac đã tạo ở bước trước. <o:p></o:p></LI>
+  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Chọn 
+  tệp .bacpac đã tạo ở bước trước. <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in">Tiếp 
+  style="MARGIN: 0in 0in 8pt; mso-list: l3 level1 lfo4; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Tiếp 
   theo, SSMS sẽ khôi phục cả cấu trúc và dữ liệu từ tệp .bacpac vào SQL Server 
-  2019. <o:p></o:p></LI></UL>
-<P class=MsoNormal style="MARGIN: 0in 0in 8pt">Lưu ý: <o:p></o:p></P>
+  2019. <o:p></o:p></FONT></FONT></LI></UL>
+<P class=MsoNormal style="MARGIN: 0in 0in 8pt"><FONT face="Times New Roman"><FONT size=4>Lưu ý: <o:p></o:p></FONT></FONT></P>
 <UL style="MARGIN-TOP: 0in" type=disc>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l0 level1 lfo5; tab-stops: list .5in">Tệp 
+  style="MARGIN: 0in 0in 8pt; mso-list: l0 level1 lfo5; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Tệp 
   .bacpac không bao gồm các tính năng như việc làm hay cấu hình máy chủ, bạn có 
-  thể phải sao chép riêng nếu cần. <o:p></o:p></LI>
+  thể phải sao chép riêng nếu cần. <o:p></o:p></FONT></FONT>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; mso-list: l0 level1 lfo5; tab-stops: list .5in">Trong 
+  style="MARGIN: 0in 0in 8pt; mso-list: l0 level1 lfo5; tab-stops: list .5in"><FONT face="Times New Roman"><FONT size=4>Trong 
   quá trình chuyển đổi từ SQL Server 2022 xuống 2019, cần chú ý kiểm tra những 
   tính năng mới có thể không tương thích với SQL Server 2019. 
-<o:p></o:p></LI></UL>
+<o:p></o:p></FONT></FONT></LI></UL>
 <P class=MsoNormal 
-style="MARGIN: 0in 0in 8pt"><o:p>&nbsp;</o:p></P></div>
-<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
+style="MARGIN: 0in 0in 8pt"><o:p><FONT size=4 face="Times New Roman">&nbsp;</FONT></o:p></P></div>
+<div id="winchm_template_footer">             Copyright © 2024 by VINHBC</div>
 
 </body>
 </html>

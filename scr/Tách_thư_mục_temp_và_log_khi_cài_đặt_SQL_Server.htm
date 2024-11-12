@@ -196,199 +196,200 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 
 
 <div id="winchm_template_top"><div id="winchm_template_button"><A href="Cài_đặt_SQL_2022.htm" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template/btn_prev_n.gif" border="0"></a><A href="Hạ_cấp_SQL_Server_từ_2022_xuống_2019.htm" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template/btn_next_n.gif" border="0"></a></div>
-<nobr><IMG align=absMiddle src="template/logo.gif">&nbsp;XXXX Help</nobr></div>
+<nobr><IMG align=absMiddle src="template/logo.gif"> &nbsp;wiki</nobr></div>
 <div id="winchm_template_navigation">Help &gt; 
 NoteTech &gt; <A href="$$unsavedpage2.htm">Cơ sở dữ liệu</A> &gt; </div>
 <div id="winchm_template_title">Tách thư mục temp và log khi cài đặt SQL Server</div>
 <div id="winchm_template_content">
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Chuẩn 
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Chuẩn 
 bị thư mục: Tạo các thư mục riêng cho tệp tạm thời (temp) và tệp log trên ổ đĩa 
-khác nhau để tối ưu hóa hiệu suất.<o:p></o:p></SPAN></P>
+khác nhau để tối ưu hóa hiệu suất.<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 8pt 0.5in; LINE-HEIGHT: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Ví 
-dụ:<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Ví 
+dụ:<o:p></O:P></FONT></FONT></SPAN></P>
 <OL type=1>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>D:\SQLData\TempDB 
-    <o:p></o:p></SPAN></LI>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">D:\SQLData\TempDB 
+    <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>E:\SQLLogs<o:p></o:p></SPAN></LI></UL>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">E:\SQLLogs<o:p></O:P></FONT></FONT></SPAN></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT size=4><FONT face="Times New Roman"><SPAN 
   style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Sử 
-  dụng SQL Server Setup Wizard:<o:p></o:p></SPAN></LI>
+  dụng SQL Server Setup Wizard:<o:p></O:P></SPAN> </FONT></FONT>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Khởi 
-    chạy trình cài đặt SQL Server. <o:p></o:p></SPAN></LI>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Khởi 
+    chạy trình cài đặt SQL Server. <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Trên 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Trên 
     trang Feature Selection, chọn các tính năng bạn muốn cài đặt. 
-    <o:p></o:p></SPAN></LI>
+    <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Trên 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Trên 
     trang Instance Configuration, chọn hoặc nhập tên instance. 
-    <o:p></o:p></SPAN></LI>
+    <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Trên 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Trên 
     trang Server Configuration, thiết lập các tài khoản dịch 
-    vụ.<o:p></o:p></SPAN></LI></UL>
+    vụ.<o:p></O:P></FONT></FONT></SPAN></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT size=4><FONT face="Times New Roman"><SPAN 
   style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Cấu 
-  hình thư mục dữ liệu:<o:p></o:p></SPAN></LI>
+  hình thư mục dữ liệu:<o:p></O:P></SPAN> </FONT></FONT>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Trên 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Trên 
     trang Database Engine Configuration, chọn tab Data Directories. 
-    <o:p></o:p></SPAN></LI>
+    <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Tại 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Tại 
     đây, bạn có thể chỉ định các thư mục cho Data root, User database directory, 
-    User database log directory, và TempDB.<o:p></o:p></SPAN></LI></UL></OL>
+    User database log directory, và TempDB.<o:p></O:P></FONT></FONT></SPAN></LI></UL></LI></OL>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 8pt 0.5in; LINE-HEIGHT: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Cụ 
-thể:<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Cụ 
+thể:<o:p></O:P></FONT></FONT></SPAN></P>
 <OL type=1 start=3>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Data 
-    root directory: D:\SQLData <o:p></o:p></SPAN></LI>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Data 
+    root directory: D:\SQLData <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>User 
-    database directory: D:\SQLData\ <o:p></o:p></SPAN></LI>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">User 
+    database directory: D:\SQLData\ <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>User 
-    database log directory: E:\SQLLogs\ <o:p></o:p></SPAN></LI>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">User 
+    database log directory: E:\SQLLogs\ <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Temp 
-    DB directory: D:\SQLData\TempDB <o:p></o:p></SPAN></LI>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Temp 
+    DB directory: D:\SQLData\TempDB <o:p></O:P></FONT></FONT></SPAN>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Temp 
-    DB log directory: E:\SQLLogs<o:p></o:p></SPAN></LI></UL>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Temp 
+    DB log directory: E:\SQLLogs<o:p></O:P></FONT></FONT></SPAN></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT size=4><FONT face="Times New Roman"><SPAN 
   style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Tiếp 
-  tục cài đặt:<o:p></o:p></SPAN></LI>
+  tục cài đặt:<o:p></O:P></SPAN> 
+  </FONT></FONT>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Sau 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Sau 
     khi cấu hình xong các thư mục dữ liệu, tiếp tục các bước còn lại của quá 
-    trình cài đặt.<o:p></o:p></SPAN></LI></UL>
+    trình cài đặt.<o:p></O:P></FONT></FONT></SPAN></LI></UL>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT size=4><FONT face="Times New Roman"><SPAN 
   style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Xác 
   nhận cấu hình: Sau khi cài đặt hoàn tất, bạn có thể xác nhận các cấu hình thư 
   mục bằng cách kiểm tra trong SQL Server Management Studio 
-  (SSMS):<o:p></o:p></SPAN></LI>
+  (SSMS):<o:p></O:P></SPAN> </FONT></FONT>
   <UL type=circle>
     <LI class=MsoNormal 
-    style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+    style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT size=4><FONT face="Times New Roman"><SPAN 
     style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Kết 
-    nối đến instance SQL Server.<o:p></o:p></SPAN></LI>
+    nối đến instance SQL Server.<o:p></O:P></SPAN> </FONT></FONT>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Chạy 
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Chạy 
     lệnh sau để kiểm tra cấu hình thư mục của 
-TempDB:<o:p></o:p></SPAN></LI></UL></OL>
+TempDB:<o:p></O:P></FONT></FONT></SPAN></LI></UL></LI></OL>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>sql<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">sql<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>USE 
-tempdb;<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">USE 
+tempdb;<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>GO<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">GO<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>EXEC 
-sp_helpfile;<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">EXEC 
+sp_helpfile;<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>GO<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">GO<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 8pt 1in; LINE-HEIGHT: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><EM>Lệnh 
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><EM><FONT size=4><FONT face="Times New Roman">Lệnh 
 này sẽ hiển thị thông tin về các tệp của TempDB và vị trí của 
-chúng.<o:p></o:p></EM></SPAN></P>
+chúng.<o:p></O:P></FONT></FONT></EM></SPAN></P>
 <OL type=1 start=6>
   <LI class=MsoNormal 
-  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+  style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level1 lfo1; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><FONT size=4><FONT face="Times New Roman"><SPAN 
   style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Điều 
   chỉnh sau khi cài đặt: Nếu bạn cần thay đổi vị trí các tệp log và temp sau khi 
-  cài đặt, bạn có thể làm theo hướng dẫn sau:<o:p></o:p></SPAN></LI>
+  cài đặt, bạn có thể làm theo hướng dẫn sau:<o:p></O:P></SPAN> </FONT></FONT>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Di 
-    chuyển TempDB:<o:p></o:p></SPAN></LI></UL></OL>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Di 
+    chuyển TempDB:<o:p></O:P></FONT></FONT></SPAN></LI></UL></LI></OL>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>sql<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">sql<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>USE 
-master;<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">USE 
+master;<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>GO<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">GO<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>ALTER 
-DATABASE tempdb <o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">ALTER 
+DATABASE tempdb <o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>MODIFY 
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">MODIFY 
 FILE (NAME = tempdev, FILENAME = 
-'D:\SQLData\TempDB\tempdb.mdf');<o:p></o:p></SPAN></P>
+'D:\SQLData\TempDB\tempdb.mdf');<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>ALTER 
-DATABASE tempdb <o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">ALTER 
+DATABASE tempdb <o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>MODIFY 
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">MODIFY 
 FILE (NAME = templog, FILENAME = 
-'E:\SQLLogs\templog.ldf');<o:p></o:p></SPAN></P>
+'E:\SQLLogs\templog.ldf');<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 0in 1in; LINE-HEIGHT: normal; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>GO<o:p></o:p></SPAN></P>
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">GO<o:p></O:P></FONT></FONT></SPAN></P>
 <OL type=1 start=6>
   <UL type=circle>
     <LI class=MsoNormal 
     style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-list: l0 level2 lfo1; tab-stops: list 1.0in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Khởi 
-    động lại SQL Server để thay đổi có hiệu lực.<o:p></o:p></SPAN></LI></UL></OL>
+    style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Khởi 
+    động lại SQL Server để thay đổi có hiệu lực.<o:p></O:P></FONT></FONT></SPAN></LI></UL></OL>
 <P class=MsoNormal 
 style="MARGIN: 0in 0in 8pt; LINE-HEIGHT: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'>Lưu 
+style='FONT-FAMILY: "Arial",sans-serif; mso-fareast-font-family: "Times New Roman"; mso-font-kerning: 0pt; mso-ligatures: none'><FONT size=4><FONT face="Times New Roman">Lưu 
 ý: Đảm bảo rằng các ổ đĩa và thư mục bạn chọn có đủ dung lượng và quyền truy cập 
-cần thiết.<o:p></o:p></SPAN></P>
+cần thiết.<o:p></O:P></FONT></FONT></SPAN></P>
 <P class=MsoNormal style="MARGIN: 0in 0in 8pt"><SPAN 
-style='FONT-FAMILY: "Arial",sans-serif'><o:p>&nbsp;</o:p></SPAN></P>
-<P>&nbsp;</P></div>
-<div id="winchm_template_footer">Copyright &copy; 2016. All rights reserved.(To change the copyright info or the title, just edit them in template.)</div>
+style='FONT-FAMILY: "Arial",sans-serif'><o:p></O:P><FONT size=4 face="Times New Roman"></FONT></SPAN></P>
+<P><FONT size=4 face="Times New Roman"></FONT>&nbsp;</P></div>
+<div id="winchm_template_footer">             Copyright © 2024 by VINHBC</div>
 
 </body>
 </html>
