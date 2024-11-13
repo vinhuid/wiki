@@ -201,96 +201,101 @@ window.onload = function(){originalOnload();parent.contentLoaded = true;};
 NoteTech &gt; <A href="$$unsavedpage4.htm">Internet Information Services (IIS)</A> &gt; </div>
 <div id="winchm_template_title">Application Pool</div>
 <div id="winchm_template_content">
-<P><FONT size=4 face="Times New Roman">Để tối ưu hóa IIS 
+<P><FONT size=3><FONT face="Times New Roman" >Để tối ưu hóa IIS 
 (Internet Information Services) và sử dụng CPU thay vì RAM trong quá trình phục 
 vụ ứng dụng web, bạn có thể thực hiện các bước sau để điều chỉnh cấu hình IIS và 
-ứng dụng nhằm cải thiện việc quản lý tài nguyên:</FONT>               
+ứng dụng nhằm cải thiện việc quản lý tài nguyên:</FONT> </FONT>               
                   
               </P>
-<H3><FONT face="Times New Roman">1. <STRONG>Điều chỉnh Application Pool Settings</STRONG>:</FONT></H3>
-<P><FONT size=4 face="Times New Roman">IIS sử dụng 
+<H3><FONT face="Times New Roman" size=3>1. <STRONG>Điều chỉnh Application Pool Settings</STRONG>:</FONT></H3>
+<P><FONT size=3><FONT face="Times New Roman" >IIS sử dụng 
 "Application Pool" để quản lý các ứng dụng web. Việc điều chỉnh thiết lập của 
 Application Pool có thể giúp giảm việc tiêu thụ RAM và chuyển tài nguyên sang 
-CPU.</FONT>               
+CPU.</FONT> </FONT>               
                 
   </P>
 <UL>
   <LI>
-  <P><FONT face="Times New Roman"><FONT size=4><STRONG>Idle Timeout</STRONG>: Đây là khoảng thời gian sau đó một 
+  <P><FONT size=3><FONT face="Times New Roman"><STRONG>Idle Timeout</STRONG>: Đây là khoảng thời gian sau đó một 
   ứng dụng trong Application Pool sẽ bị "nghỉ" nếu không có yêu cầu mới. Việc 
-  giảm thời gian này giúp giải phóng bộ nhớ sớm hơn.</FONT></FONT>           
+  giảm thời gian này giúp giải phóng bộ nhớ sớm hơn.</FONT> </FONT>           
                  
           </P>
   <OL>
-    <LI><FONT size=4 face="Times New Roman">Mở <STRONG>IIS Manager</STRONG>. </FONT>
-    <LI><FONT size=4 face="Times New Roman">Chọn <STRONG>Application Pools</STRONG>. </FONT>
-    <LI><FONT size=4 face="Times New Roman">Chọn 
+    <LI><FONT size=3 face="Times New Roman">Mở <STRONG>IIS Manager</STRONG>. </FONT>
+    <LI><FONT size=3 face="Times New Roman">Chọn <STRONG>Application Pools</STRONG>. </FONT>
+    <LI><FONT size=3 face="Times New Roman">Chọn 
     Application Pool của ứng dụng cần điều chỉnh. </FONT>
-    <LI><FONT size=4 face="Times New Roman">Chọn <STRONG>Advanced Settings</STRONG>. </FONT>
-    <LI><FONT size=4 face="Times New Roman">Trong mục <STRONG>Idle Time-out (minutes)</STRONG>, giảm số phút 
-    từ 20 (mặc định) xuống một giá trị nhỏ hơn, ví dụ như 5 phút.</FONT>      
+    <LI><FONT size=3 face="Times New Roman">Chọn <STRONG>Advanced Settings</STRONG>. </FONT>
+    <LI><FONT size=3><FONT face="Times New Roman" >Trong mục <STRONG>Idle Time-out (minutes)</STRONG>, giảm số phút 
+    từ 20 (mặc định) xuống một giá trị nhỏ hơn, ví dụ như 5 phút.</FONT> </FONT>      
                 </LI></OL>
   <LI>
-  <P><FONT face="Times New Roman"><FONT size=4><STRONG>Limit Maximum Used Memory (Private Memory Limit)</STRONG>: Đây là giới hạn bộ nhớ tối đa mà một Application Pool có thể 
-  sử dụng.</FONT></FONT>   
+  <P><FONT size=3><FONT face="Times New Roman"><STRONG>Limit Maximum Used Memory (Private Memory Limit)</STRONG>: Đây là giới hạn bộ nhớ tối đa mà một Application Pool có thể 
+  sử dụng.</FONT> </FONT>   
                </P>
   <OL>
-    <LI><FONT size=4 face="Times New Roman">Trong <STRONG>Advanced Settings</STRONG> của Application Pool, tìm mục 
+    <LI><FONT size=3 face="Times New Roman">Trong <STRONG>Advanced Settings</STRONG> của Application Pool, tìm mục 
     <STRONG>Private Memory Limit (KB)</STRONG>. </FONT>
-    <LI><FONT size=4 face="Times New Roman">Giới hạn bộ nhớ 
+    <LI><FONT size=3><FONT face="Times New Roman" >Giới hạn bộ nhớ 
     tiêu thụ bằng cách đặt giá trị này thành 0 hoặc một giá trị cụ thể phù hợp 
-    với ứng dụng của bạn.</FONT>                 
+    với ứng dụng của bạn.</FONT> 
+  </FONT>                 
              </LI></OL>
   <LI>
-  <P><FONT face="Times New Roman"><FONT size=4><STRONG>Reduce Recycling</STRONG>: Việc recyle quá thường xuyên 
-  có thể khiến IIS sử dụng nhiều RAM hơn.</FONT></FONT>        
+  <P><FONT size=3><FONT face="Times New Roman"><STRONG>Reduce Recycling</STRONG>: Việc recyle quá thường xuyên 
+  có thể khiến IIS sử dụng nhiều RAM hơn.</FONT> </FONT>        
         </P>
   <OL>
-    <LI><FONT size=4 face="Times New Roman">Trong <STRONG>Advanced Settings</STRONG>, thiết lập giá trị 
+    <LI><FONT size=3><FONT face="Times New Roman" >Trong <STRONG>Advanced Settings</STRONG>, thiết lập giá trị 
     <STRONG>Regular Time Interval</STRONG> thành khoảng thời gian 
     lớn hơn để hạn chế việc tái khởi động Application 
-Pool.</FONT>         
+Pool.</FONT> </FONT>         
           </LI></OL></LI></UL>
-<H3><FONT face="Times New Roman">2. <STRONG>Giảm tiêu thụ bộ nhớ của ứng dụng .NET</STRONG>:</FONT></H3>
-<P><FONT size=4 face="Times New Roman">Nếu ứng dụng của bạn 
+<H3><FONT face="Times New Roman" size=3>2. <STRONG>Giảm tiêu thụ bộ nhớ của ứng dụng .NET</STRONG>:</FONT></H3>
+<P><FONT size=3><FONT face="Times New Roman" >Nếu ứng dụng của bạn 
 được viết bằng ASP.NET, bạn có thể kiểm soát tiêu thụ bộ nhớ bằng cách tối ưu 
-hóa các quy trình.</FONT>                 
+hóa các quy trình.</FONT> </FONT>                 
         </P>
 <UL>
   <LI>
-  <P><FONT face="Times New Roman"><FONT size=4><STRONG>Disable ViewState</STRONG>: ViewState giúp duy trì trạng 
-  thái của form giữa các yêu cầu nhưng có thể tốn nhiều RAM.</FONT></FONT>        
+  <P><FONT size=3><FONT face="Times New Roman"><STRONG>Disable ViewState</STRONG>: ViewState giúp duy trì trạng 
+  thái của form giữa các yêu cầu nhưng có thể tốn nhiều RAM.</FONT> 
+  </FONT>        
             </P>
   <UL>
-    <LI><FONT size=4 face="Times New Roman">Đặt thuộc tính <CODE>EnableViewState="false"</CODE> trong các trang 
-    ASP.NET nơi không cần lưu trạng thái.</FONT>    
+    <LI><FONT size=3><FONT face="Times New Roman" >Đặt thuộc tính <CODE>EnableViewState="false"</CODE> trong các trang 
+    ASP.NET nơi không cần lưu trạng thái.</FONT> </FONT>    
           </LI></UL>
   <LI>
-  <P><FONT face="Times New Roman"><FONT size=4><STRONG>Optimize Garbage Collection</STRONG>:</FONT></FONT></P>
+  <P><FONT face="Times New Roman"><FONT size=3><STRONG>Optimize Garbage Collection</STRONG>:</FONT></FONT></P>
   <OL>
-    <LI><FONT size=4 face="Times New Roman">Trong tệp cấu hình của ứng dụng (<CODE>web.config</CODE>), bạn có thể 
-    bật chế độ <STRONG>Concurrent Garbage Collection</STRONG>:</FONT><PRE class=!overflow-visible><DIV class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative"><DIV class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9"><FONT size=4 face="Times New Roman">xml</FONT></DIV><DIV class="sticky top-9 md:top-[5.75rem]"><DIV class="absolute bottom-0 right-2 flex h-9 items-center"><DIV class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"><SPAN data-state="closed"><BUTTON class="flex gap-1 items-center py-1"><svg class="icon-sm" height="24" viewBox="0 0 24 24" fill ="none" xmlns="http://www.w3.org/2000/svg" width="24"><path fill="currentColor" fill-rule="evenodd" clip-rule                                                                         ="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z">  </path>  </svg>Sao chép mã</BUTTON></SPAN></DIV></DIV></DIV><DIV class="overflow-y-auto p-4" dir=ltr><CODE class="!whitespace-pre hljs language-xml"><FONT face="Times New Roman"><FONT size=4><SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
+    <LI><FONT size=3 face="Times New Roman">Trong tệp cấu hình của ứng dụng (<CODE>web.config</CODE>), bạn có thể 
+    bật chế độ <STRONG>Concurrent Garbage Collection</STRONG>:</FONT><PRE class=!overflow-visible><DIV class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative"><DIV class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9"><FONT size=3 face="Times New Roman">xml</FONT></DIV><DIV class="sticky top-9 md:top-[5.75rem]"><DIV class="absolute bottom-0 right-2 flex h-9 items-center"><DIV class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"><SPAN data-state="closed"><BUTTON class="flex gap-1 items-center py-1"><svg class="icon-sm" height="24" width="24" fill    ="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M7 5C7                                                                         3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" clip-rule  ="evenodd" fill-rule="evenodd">  </path>  </svg>Sao chép mã</BUTTON></SPAN></DIV></DIV></DIV><DIV class="overflow-y-auto p-4" dir=ltr><CODE class="!whitespace-pre hljs language-xml"><FONT size=3><FONT face="Times New Roman"><SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
   <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>runtime</SPAN>&gt;</SPAN>
     <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>gcConcurrent</SPAN> <SPAN class=hljs-attr>enabled</SPAN>=<SPAN class=hljs-string>"true"</SPAN> /&gt;</SPAN>
   <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>runtime</SPAN>&gt;</SPAN>
 <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
-</FONT></FONT>
+</FONT>
+</FONT>
 </CODE></DIV></DIV></PRE></LI></OL>
   <LI>
-  <P><FONT face="Times New Roman"><FONT size=4><STRONG>Enable Server-Side Output Caching</STRONG>: IIS hỗ trợ bộ 
+  <P><FONT size=3><FONT face="Times New Roman"><STRONG>Enable Server-Side Output Caching</STRONG>: IIS hỗ trợ bộ 
   nhớ đệm phía server, điều này giúp giảm số lần thực thi mã, giảm tải CPU, tuy 
-  nhiên cần quản lý bộ nhớ đệm để tối ưu RAM.</FONT></FONT>       
+  nhiên cần quản lý bộ nhớ đệm để tối ưu RAM.</FONT> </FONT>       
                   
            </P>
   <OL>
-    <LI><FONT size=4 face="Times New Roman">Trong tệp <CODE>web.config</CODE>, bật bộ nhớ đệm cho các yêu cầu 
-    thường xuyên:</FONT>          
-    <PRE class=!overflow-visible><DIV class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative"><DIV class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9"><FONT size=4 face="Times New Roman">xml</FONT></DIV><DIV class="sticky top-9 md:top-[5.75rem]"><DIV class="absolute bottom-0 right-2 flex h-9 items-center"><DIV class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"><SPAN data-state="closed"><BUTTON class="flex gap-1 items-center py-1"><svg class="icon-sm" height="24" viewBox="0 0 24 24" fill ="none" xmlns="http://www.w3.org/2000/svg" width="24"><path fill="currentColor" fill-rule="evenodd" clip-rule                                                                         ="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z">  </path>  </svg>Sao chép mã</BUTTON></SPAN></DIV></DIV></DIV><DIV class="overflow-y-auto p-4" dir=ltr><CODE class="!whitespace-pre hljs language-xml"><FONT face="Times New Roman"><FONT size=4><SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
+    <LI><FONT size=3><FONT face="Times New Roman" >Trong tệp <CODE>web.config</CODE>, bật bộ nhớ đệm cho các yêu cầu 
+    thường xuyên:</FONT> </FONT>          
+    <PRE class=!overflow-visible><DIV class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative"><DIV class="flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9"><FONT size=3 face="Times New Roman">xml</FONT></DIV><DIV class="sticky top-9 md:top-[5.75rem]"><DIV class="absolute bottom-0 right-2 flex h-9 items-center"><DIV class="flex items-center rounded bg-token-main-surface-secondary px-2 font-sans text-xs text-token-text-secondary"><SPAN data-state="closed"><BUTTON class="flex gap-1 items-center py-1"><svg class="icon-sm" height="24" width="24" fill    ="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M7 5C7                                                                         3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" clip-rule  ="evenodd" fill-rule="evenodd">  </path>  </svg>Sao chép mã</BUTTON></SPAN></DIV></DIV></DIV><DIV class="overflow-y-auto p-4" dir=ltr><CODE class="!whitespace-pre hljs language-xml"><FONT face="Times New Roman"><FONT size=3><SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
   <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>system.web</SPAN>&gt;</SPAN>
     <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>caching</SPAN>&gt;</SPAN>
       <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>outputCacheSettings</SPAN>&gt;</SPAN>
         <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>outputCacheProfiles</SPAN>&gt;</SPAN>
-          </FONT></FONT><FONT face="Times New Roman"><FONT size=4>
+          </FONT>
+          </FONT><FONT face="Times New Roman">
+<FONT size=3>          </FONT><FONT size=3>
           <SPAN class=hljs-tag>&lt;<SPAN class=hljs-name>add</SPAN> <SPAN class=hljs-attr>name</SPAN>=<SPAN class=hljs-string>"CacheProfile"</SPAN>
                <SPAN class=hljs-attr>duration</SPAN>=<SPAN class=hljs-string>"60"</SPAN>
                <SPAN class=hljs-attr>varyByParam</SPAN>=<SPAN class=hljs-string>"none"</SPAN> /&gt;</SPAN>
@@ -299,54 +304,56 @@ hóa các quy trình.</FONT>
     <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>caching</SPAN>&gt;</SPAN>
   <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>system.web</SPAN>&gt;</SPAN>
 <SPAN class=hljs-tag>&lt;/<SPAN class=hljs-name>configuration</SPAN>&gt;</SPAN>
-</FONT></FONT>
+</FONT>
+</FONT>
 </CODE></DIV></DIV></PRE></LI></OL></LI></UL>
-<H3><FONT face="Times New Roman">3. <STRONG>Sử dụng HTTP Compression</STRONG>:</FONT></H3>
-<P><FONT size=4 face="Times New Roman">Việc bật nén HTTP có 
+<H3><FONT face="Times New Roman" size=3>3. <STRONG>Sử dụng HTTP Compression</STRONG>:</FONT></H3>
+<P><FONT size=3><FONT face="Times New Roman" >Việc bật nén HTTP có 
 thể giảm kích thước dữ liệu truyền từ server đến client, từ đó giảm tải RAM bằng 
-cách giảm dữ liệu xử lý.</FONT>                
+cách giảm dữ liệu xử lý.</FONT> 
+</FONT>                
            </P>
 <OL>
-  <LI><FONT size=4 face="Times New Roman">Trong <STRONG>IIS Manager</STRONG>, chọn máy chủ. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Trong mục <STRONG>IIS</STRONG>, chọn <STRONG>Compression</STRONG>. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Bật cả hai tùy chọn <STRONG>Enable dynamic content compression</STRONG> và 
+  <LI><FONT size=3 face="Times New Roman">Trong <STRONG>IIS Manager</STRONG>, chọn máy chủ. </FONT>
+  <LI><FONT size=3 face="Times New Roman">Trong mục <STRONG>IIS</STRONG>, chọn <STRONG>Compression</STRONG>. </FONT>
+  <LI><FONT size=3 face="Times New Roman">Bật cả hai tùy chọn <STRONG>Enable dynamic content compression</STRONG> và 
   <STRONG>Enable static content compression</STRONG>.</FONT></LI></OL>
-<H3><FONT face="Times New Roman">4. <STRONG>Giới hạn CPU Usage (Processor Throttling)</STRONG>:</FONT></H3>
-<P><FONT size=4 face="Times New Roman">Nếu muốn hạn chế CPU 
+<H3><FONT face="Times New Roman" size=3>4. <STRONG>Giới hạn CPU Usage (Processor Throttling)</STRONG>:</FONT></H3>
+<P><FONT size=3><FONT face="Times New Roman" >Nếu muốn hạn chế CPU 
 sử dụng, bạn có thể giới hạn mức tiêu thụ CPU của từng Application 
-Pool.</FONT>                  
+Pool.</FONT> </FONT>                  
  </P>
 <OL>
-  <LI><FONT size=4 face="Times New Roman">Trong <STRONG>IIS Manager</STRONG>, chọn <STRONG>Application 
+  <LI><FONT size=3 face="Times New Roman">Trong <STRONG>IIS Manager</STRONG>, chọn <STRONG>Application 
   Pools</STRONG>. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Chọn Application Pool cần điều chỉnh và vào <STRONG>Advanced 
+  <LI><FONT size=3 face="Times New Roman">Chọn Application Pool cần điều chỉnh và vào <STRONG>Advanced 
   Settings</STRONG>. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Trong mục <STRONG>CPU</STRONG>, đặt giá trị <STRONG>Limit</STRONG> để giới hạn mức CPU (theo phần 
-  trăm).</FONT>   
+  <LI><FONT size=3><FONT face="Times New Roman" >Trong mục <STRONG>CPU</STRONG>, đặt giá trị <STRONG>Limit</STRONG> để giới hạn mức CPU (theo phần 
+  trăm).</FONT> </FONT>   
        </LI></OL>
-<H3><FONT face="Times New Roman">5. <STRONG>Chạy ứng dụng trên nhiều worker processes (Web 
+<H3><FONT face="Times New Roman" size=3>5. <STRONG>Chạy ứng dụng trên nhiều worker processes (Web 
 Garden)</STRONG>:</FONT></H3>
-<P><FONT size=4 face="Times New Roman">Bạn có thể cấu hình 
+<P><FONT size=3><FONT face="Times New Roman" >Bạn có thể cấu hình 
 IIS để chạy nhiều worker process cho một ứng dụng, điều này sẽ chuyển tài nguyên 
-xử lý sang CPU nhiều hơn thay vì RAM.</FONT>                
+xử lý sang CPU nhiều hơn thay vì RAM.</FONT> </FONT>                
              </P>
 <OL>
-  <LI><FONT size=4 face="Times New Roman">Trong <STRONG>IIS Manager</STRONG>, chọn <STRONG>Application 
+  <LI><FONT size=3 face="Times New Roman">Trong <STRONG>IIS Manager</STRONG>, chọn <STRONG>Application 
   Pools</STRONG>. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Chọn Application 
+  <LI><FONT size=3 face="Times New Roman">Chọn Application 
   Pool của ứng dụng. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Chọn <STRONG>Advanced Settings</STRONG>. </FONT>
-  <LI><FONT size=4 face="Times New Roman">Trong mục <STRONG>Maximum Worker Processes</STRONG>, đặt giá trị lớn hơn 1 
-  (mặc định là 1) để tăng số worker process chạy đồng thời.</FONT>       
-             </LI></OL><FONT size=4 face="Times New Roman">
+  <LI><FONT size=3 face="Times New Roman">Chọn <STRONG>Advanced Settings</STRONG>. </FONT>
+  <LI><FONT size=3><FONT face="Times New Roman" >Trong mục <STRONG>Maximum Worker Processes</STRONG>, đặt giá trị lớn hơn 1 
+  (mặc định là 1) để tăng số worker process chạy đồng thời.</FONT> </FONT>       
+             </LI></OL><FONT size=3 face="Times New Roman">
 <HR>
 </FONT>
 
-<P><FONT size=4 face="Times New Roman">Việc tối ưu IIS để 
+<P><FONT size=3><FONT face="Times New Roman" >Việc tối ưu IIS để 
 sử dụng CPU thay vì RAM đòi hỏi phải cân bằng giữa tài nguyên hệ thống và yêu 
 cầu cụ thể của ứng dụng. Các bước trên giúp kiểm soát tiêu thụ bộ nhớ, sử dụng 
 CPU hiệu quả hơn, từ đó cải thiện hiệu suất tổng thể của ứng 
-dụng.</FONT>                  
+dụng.</FONT> </FONT>                  
                  
                   
   </P></div>
